@@ -182,20 +182,7 @@ O discurso republicano buscava construir a imagem de um **Brasil moderno, homog�
 - **Slogan**: "Quantos somos? O Censo Nacional vai contar para você"
 - **Planejamento**: Minucioso devido ao grande intervalo desde o último censo (1920)
 
-## 📌 Síntese Interpretativa
-
-### 📅 Evolução dos Censos Brasileiros
-
-| Período      | Características                                                                 |
-|--------------|----------------------------------------------------------------------------------|
-| **1872**     | **Identidade imperial**: A nação era descrita de forma hierarquizada pela cor e condição social |
-| **1890–1900**| **Primeira República**: Dificuldade de padronização; preocupação com heranças da escravidão e imigração |
-| **1920**     | **Busca por modernização**: Eliminação da cor e religião como variáveis, com foco na ocupação e produtividade econômica |
-| **1940**     | **Estado Novo**: Estatística como instrumento de planejamento estatal e propaganda, iniciando o ciclo institucional do IBGE |
-
 ---
-
-#### Desde quando o Censo coleta a condição de ocupação do domicílio?
 
 ## 📈 O Censo de 1950
 - Primeiro após a Segunda Guerra Mundial.
@@ -203,8 +190,7 @@ O discurso republicano buscava construir a imagem de um **Brasil moderno, homog�
 - Evidenciou o início da **migração campo–cidade** em maior escala.
 - IBGE passou a usar métodos mais modernos de tabulação e processamento dos dados.
 
-🔹 Curiosidade:  
-Foi o censo que mostrou a ascensão do **Sudeste como principal região populacional** — ultrapassando o Nordeste em população absoluta.
+🔹 Foi o censo que mostrou a ascensão do **Sudeste como principal região populacional** — ultrapassando o Nordeste em população absoluta.
 
 ---
 
@@ -214,8 +200,7 @@ Foi o censo que mostrou a ascensão do **Sudeste como principal região populaci
 - Inclusão de variáveis sobre **condição de saneamento** e infraestrutura urbana.
 - Fortalecimento da ideia de “Brasil urbano-industrial”.
 
-🔹 Curiosidade:  
-Esse censo já captava a formação de grandes **cinturões de favelas** em torno de São Paulo e Rio de Janeiro — reflexo da urbanização desordenada.
+🔹 Esse censo já captava a formação de grandes **cinturões de favelas** em torno de São Paulo e Rio de Janeiro — reflexo da urbanização desordenada.
 
 ---
 
@@ -225,8 +210,7 @@ Esse censo já captava a formação de grandes **cinturões de favelas** em torn
 - Pela primeira vez, o Brasil registrou **maioria da população vivendo em áreas urbanas** (cerca de 55%).
 - Introduziu a classificação de domicílios segundo a **condição de ocupação** (próprio, alugado, cedido etc.).
 
-🔹 Curiosidade:  
-Apesar do chamado “milagre econômico”, o censo revelou grandes desigualdades:  
+🔹 Apesar do chamado “milagre econômico”, o censo revelou grandes desigualdades:  
 mais de **1/3 das casas urbanas não tinham banheiro**, e a cobertura de água tratada era ainda limitada em periferias.
 
 
@@ -235,8 +219,7 @@ mais de **1/3 das casas urbanas não tinham banheiro**, e a cobertura de água t
 - Destacou-se pela **ênfase na urbanização**: pela primeira vez, o Brasil registrou **mais de 50% da população vivendo em áreas urbanas**.
 - Iniciou a coleta sistemática sobre **condição de ocupação dos domicílios** (próprio, alugado, cedido, outra condição).
 
-🔹 Curiosidade:  
-Apesar do crescimento urbano, o déficit habitacional era enorme. Surgem os primeiros levantamentos oficiais de **favelas**, mas com subestimação (muitas áreas urbanas pobres eram classificadas como “aglomerados irregulares”).
+🔹 Apesar do crescimento urbano, o déficit habitacional era enorme. Surgem os primeiros levantamentos oficiais de **favelas**, mas com subestimação (muitas áreas urbanas pobres eram classificadas como “aglomerados irregulares”).
 
 ---
 
@@ -245,8 +228,7 @@ Apesar do crescimento urbano, o déficit habitacional era enorme. Surgem os prim
 - Pela primeira vez, mais de **120 milhões de habitantes** foram recenseados.
 - Inclusão de novas classificações sobre habitação: “cedido por empregador” vs. “cedido de outra forma”.
 
-🔹 Curiosidade:  
-O IBGE registrou que **mais de 60% das casas tinham energia elétrica** — um salto comparado a 1970, mas ainda desigual em zonas rurais.
+🔹 O IBGE registrou que **mais de 60% das casas tinham energia elétrica** — um salto comparado a 1970, mas ainda desigual em zonas rurais.
 
 ---
 
@@ -255,8 +237,7 @@ O IBGE registrou que **mais de 60% das casas tinham energia elétrica** — um s
 - Reintroduziu a categoria **“indígena”** como cor/raça, ausente desde 1872.
 - População: **146,8 milhões**.
 
-🔹 Curiosidade:  
-Esse censo revelou a **explosão da televisão** no Brasil: mais de 70% dos domicílios tinham aparelho de TV, mostrando o impacto da comunicação de massa.
+🔹 Esse censo revelou a **explosão da televisão** no Brasil: mais de 70% dos domicílios tinham aparelho de TV, mostrando o impacto da comunicação de massa.
 
 ---
 
@@ -267,8 +248,7 @@ Esse censo revelou a **explosão da televisão** no Brasil: mais de 70% dos domi
   - “Próprio, ainda pagando”
 - Marcou o início do uso da **internet** como tema indireto, medindo computadores e linhas telefônicas.
 
-🔹 Curiosidade:  
-O censo registrou que **metade da população já vivia em cidades acima de 100 mil habitantes**.
+🔹 O censo registrou que **metade da população já vivia em cidades acima de 100 mil habitantes**.
 
 ---
 
@@ -277,8 +257,7 @@ O censo registrou que **metade da população já vivia em cidades acima de 100 
 - Inclusão detalhada da **condição de ocupação do domicílio** no Questionário Básico.
 - Coleta ampliada sobre saneamento, acesso à água, energia elétrica e coleta de lixo.
 
-🔹 Curiosidade:  
-O censo mostrou que o **celular já era mais comum que o telefone fixo** nos lares brasileiros — marco da mudança tecnológica.
+🔹 O censo mostrou que o **celular já era mais comum que o telefone fixo** nos lares brasileiros — marco da mudança tecnológica.
 
 ---
 
@@ -290,8 +269,7 @@ O censo mostrou que o **celular já era mais comum que o telefone fixo** nos lar
   - “Estrutura residencial degradada ou inacabada”
 - Pela primeira vez, a condição de ocupação do domicílio foi coletada **apenas na amostra**, não no questionário universal.
 
-🔹 Curiosidade:  
-O Brasil registrou uma **redução inédita no ritmo de crescimento populacional** — indicando uma transição demográfica mais rápida que o previsto.  
+🔹 O Brasil registrou uma **redução inédita no ritmo de crescimento populacional** — indicando uma transição demográfica mais rápida que o previsto.  
 Além disso, o censo mostrou que **mais de 84% dos brasileiros vivem em áreas urbanas**, confirmando a urbanização quase completa do país.
 
 ---
@@ -302,12 +280,3 @@ Além disso, o censo mostrou que **mais de 84% dos brasileiros vivem em áreas u
 - MOTTA, Marly Silva da. **O Brasil em números: censos demográficos e construção nacional**. Rio de Janeiro: IBGE, 1992.
 - BOTELHO, Tarcísio Rodrigues. **Os recenseamentos da população no Brasil: reflexões sobre as classificações**. Belo Horizonte: UFMG, 2009.
 - MOTTA, Ana Lúcia Silva. **O perfil do brasileiro construído pelo IBGE: uma memória discursiva dos censos demográficos de 1940 a 2010**. Tese (Doutorado em Memória Social) – UNIRIO, 2012. Disponível em: http://www.memoriasocial.pro.br/documentos/Teses/Tese20.pdf.
-
-
-## 📚 Referências Complementares
-
-- IBGE. **Brasil: 500 anos de povoamento**. Rio de Janeiro: IBGE, 2000.  
-- IBGE. **Censo Demográfico 2010: Questionário Básico**. Rio de Janeiro: IBGE, 2012.  
-- IBGE. **Censo Demográfico 2022: Resultados Preliminares**. Rio de Janeiro: IBGE, 2023.  
-- NERI, Marcelo Cortes. **A nova classe média: o lado brilhante dos pobres**. FGV/IBRE, 2011.  
-- PNUD. **Relatório do Desenvolvimento Humano Brasil 2022**. Brasília: PNUD, 2022.  
