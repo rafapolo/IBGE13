@@ -1,4 +1,4 @@
-#### Esse projeto é resultado do Estudo dos dados de Habitaçao nos últimas 60 anos.
+#### Um retrato público dos dados de Habitaçao nos últimas 60 anos.
 
 
 # 📊 Síntese dos Censos (1872–2022)
@@ -12,6 +12,11 @@
 | 1940 | 41,2                 | Estado Novo (Vargas)                        | 1º sob IBGE; estatística como planejamento estatal       | Slogan: *“Quantos somos? O Censo Nacional vai contar para você”* |
 | 1950 | 51,9                 | Pós-2ª Guerra Mundial                       | Ênfase na industrialização; migração campo–cidade        | Sudeste supera Nordeste em população |
 | 1960 | 70,1                 | Juscelino Kubitschek e desenvolvimentismo   | Inclusão de variáveis de saneamento e infraestrutura    | Identificação das primeiras grandes favelas |
+
+## 📊 Dados Utilizados (1970–2022)
+
+| Ano  | População (milhões) | Contexto Político-Social                     | Destaques do Censo                                      | Curiosidade |
+|------|----------------------|----------------------------------------------|---------------------------------------------------------|-------------|
 | 1970 | 93,1                 | Ditadura Militar (AI-5 em vigor)            | Maioria urbana (>50%); início da coleta sobre domicílios | 1/3 das casas urbanas sem banheiro |
 | 1980 | 119,0                | Ditadura (últimos anos)                     | Expansão das metrópoles; refinamento na “condição cedido”| 60% das casas tinham energia elétrica |
 | 1991 | 146,8                | Redemocratização                            | Reintrodução da categoria indígena                      | Mais de 70% dos lares tinham TV |
@@ -42,20 +47,20 @@ Não foram coletados dados sobre moradia ou habitação nesse primeiro recenseam
 
 - Foram recenseados nacionais e estrangeiros, livres e escravizados, presentes ou ausentes.
 - Dados coletados:
-  - Nome
-  - Sexo
-  - Idade
-  - Cor
-  - Estado civil
-  - Naturalidade
-  - Nacionalidade
-  - Residência
-  - Grau de instrução primária
-  - Religião
-  - Enfermidades aparentes
-  - Parentesco com o chefe da família
-  - Para crianças de 6 a 15 anos: frequência escolar
-  - *(AZEVEDO, 1990, p. 115)*
+- 👤 Nome  
+- 🚻 Sexo  
+- 🎂 Idade  
+- 🎨 Cor  
+- 💍 Estado civil  
+- 🗺️ Naturalidade  
+- 🌍 Nacionalidade  
+- 🏠 Residência  
+- 🎓 Grau de instrução primária  
+- ⛪ Religião  
+- 🏥 Enfermidades aparentes  
+- 👪 Parentesco com o chefe da família  
+- 🏫 Para crianças de 6 a 15 anos: frequência escolar  
+- *(AZEVEDO, 1990, p. 115)*
 
 
 ####  Resultado do Censo de 1872 publicada em tabelas impressas em 1876
@@ -65,27 +70,37 @@ O primeiro Censo registrou quase 100% da população como católica. As exceçõ
 - População total recenseada: 10.317.733 pessoas (incluindo escravizados e livres).
 - População total: 9.930.478 habitantes
 
-#### Religiao
+#### 🎯 Religiao
 - Protestantes (~9 mil pessoas)
 - Judeus (~349 pessoas)
 - Outras religões residuais (incluindo muçulmanos e espíritas, sem detalhamento)
 - Sem religião/sem declaração: praticamente inexistente no registro oficial.
 - Outras religiões (inclusive espíritas, muçulmanos e cultos afro-brasileiros): número reduzidíssimo, frequentemente diluído em categorias residuais.
 
-#### Cor
-- Brancos: 3.787.289 (cerca de 38,1%)
-- Pardos: 4.188.737 (cerca de 42,2%)
-- Pretos: 1.954.452 (cerca de 19,7%)
-- Caboclos: 386.955 (cerca de 3,9%)
-
-#### Trabalho
+#### 🎯 Trabalho
 - Livres (incluindo libertos): 8.419.672 (≈ 84,8%)
 - Escravizados: 1.510.806 (≈ 15,2%)
+
+#### 🎯 Cor
+- 🤍 Brancos: 3.787.289 (cerca de 38,1%)  
+- 🤎 Pardos: 4.188.737 (cerca de 42,2%)  
+- 🖤 Pretos: 1.954.452 (cerca de 19,7%)  
+- 🪶 Caboclos: 386.955 (cerca de 3,9%)  
+
+🗂️ Alguns termos comuns usados entre os séculos XVI e XIX:
+
+- Mulato 🧑🏿‍🤝‍🧑🏻 → descendente de branco com negro.
+- Caboclo 🪶 → descendente de branco com indígena (ou indígena “assimilado”).
+- Cafuzo 🖤🪶 → descendente de negro com indígena.
+- Mameluco 👶 → outro termo para descendente de branco com indígena (mais usado no período colonial).
+- Pardo 🤎 → categoria “guarda-chuva”, englobando diferentes tipos de mestiçagem, sobretudo afrodescendentes.
+
+
 
 O dado mostra que, já em 1872, a maioria da população brasileira era não branca (pardos + pretos + caboclos somavam mais de 60%).
 
 
-⚠️ O Censo de 1872 é, portanto, um marco para medir a dimensão final da escravidão no Brasil. Quantos % da pupulaçao em 2025 escravizam-se em modelos de trabalho 6x1 para sobreviver? Quantos sao dá mais enfase as vidas que ler porcentagem. Quem foram?
+⚠️ O Censo de 1872 é, portanto, um marco para medir a dimensão final da escravidão no Brasil.
 
 A categoria “livres” incluía tanto nascidos livres quanto libertos (ex-escravizados manumitidos). O censo não separava explicitamente libertos de livres natos, mas trabalhos historiográficos estimam que os libertos eram uma proporção significativa em províncias como Bahia, Rio de Janeiro e Minas Gerais.
 
@@ -140,17 +155,17 @@ O discurso republicano buscava construir a imagem de um **Brasil moderno, homog�
    - Com categorias ocupacionais detalhadas (produção, indústria, comércio, administração, profissões liberais, serviços domésticos etc.)
 
 ### Dados Coletados
-- Nome
-- Sexo
-- Idade
-- Estado civil
-- Nacionalidade
-- Profissão
-- Grau de instrução
-- Residência
-- Defeitos físicos (cegueira e surdo-mudez)
-- Condição no domicílio
-- Número de dependentes
+- 👤 Nome  
+- 🚻 Sexo  
+- 🎂 Idade  
+- 💍 Estado civil  
+- 🌍 Nacionalidade  
+- 💼 Profissão  
+- 🎓 Grau de instrução  
+- 🏠 Residência  
+- ♿ Defeitos físicos (cegueira e surdo-mudez)  
+- 🏡 Condição no domicílio  
+- 👨‍👩‍👧‍👦 Número de dependentes  
 - *(BOTELHO, 2009, p. 11)*
 
 
@@ -281,6 +296,14 @@ Além disso, o censo mostrou que **mais de 84% dos brasileiros vivem em áreas u
 
 ---
 
+## 📚 Referências Principais
+
+- AZEVEDO, Fernando de. **A cultura brasileira**. São Paulo: Melhoramentos, 1990.
+- MOTTA, Marly Silva da. **O Brasil em números: censos demográficos e construção nacional**. Rio de Janeiro: IBGE, 1992.
+- BOTELHO, Tarcísio Rodrigues. **Os recenseamentos da população no Brasil: reflexões sobre as classificações**. Belo Horizonte: UFMG, 2009.
+- MOTTA, Ana Lúcia Silva. **O perfil do brasileiro construído pelo IBGE: uma memória discursiva dos censos demográficos de 1940 a 2010**. Tese (Doutorado em Memória Social) – UNIRIO, 2012. Disponível em: http://www.memoriasocial.pro.br/documentos/Teses/Tese20.pdf.
+
+
 ## 📚 Referências Complementares
 
 - IBGE. **Brasil: 500 anos de povoamento**. Rio de Janeiro: IBGE, 2000.  
@@ -288,11 +311,3 @@ Além disso, o censo mostrou que **mais de 84% dos brasileiros vivem em áreas u
 - IBGE. **Censo Demográfico 2022: Resultados Preliminares**. Rio de Janeiro: IBGE, 2023.  
 - NERI, Marcelo Cortes. **A nova classe média: o lado brilhante dos pobres**. FGV/IBRE, 2011.  
 - PNUD. **Relatório do Desenvolvimento Humano Brasil 2022**. Brasília: PNUD, 2022.  
-
-
-## 📚 Referências Principais
-
-- AZEVEDO, Fernando de. **A cultura brasileira**. São Paulo: Melhoramentos, 1990.
-- MOTTA, Marly Silva da. **O Brasil em números: censos demográficos e construção nacional**. Rio de Janeiro: IBGE, 1992.
-- BOTELHO, Tarcísio Rodrigues. **Os recenseamentos da população no Brasil: reflexões sobre as classificações**. Belo Horizonte: UFMG, 2009.
-- MOTTA, Ana Lúcia Silva. **O perfil do brasileiro construído pelo IBGE: uma memória discursiva dos censos demográficos de 1940 a 2010**. Tese (Doutorado em Memória Social) – UNIRIO, 2012. Disponível em: http://www.memoriasocial.pro.br/documentos/Teses/Tese20.pdf.
