@@ -7,8 +7,6 @@ config:
     showValues: false
 ---
 sankey-beta
-
-sankey-beta
     Rural,Proprio pago,91741583
     Urbano,Proprio pago,4427773
     Rural,Proprio em aquisicao,1211489
