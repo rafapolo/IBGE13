@@ -1,0 +1,52 @@
+🔹 Etapa 1 — Situação geral dos domicílios
+1.	Quantos domicílios particulares permanentes existem no Brasil? Como eles variaram ao longo do tempo?
+2.	Qual a proporção de domicílios por condição de ocupação (próprio, alugado, cedido, em outra condição)? 
+3.	Como essa proporção varia entre área urbana e rural?
+4.	Como ela varia por Unidade da Federação / região metropolitana / capital?
+5.	Da pra saber como as perguntas 2, 3 e 4 variaram ao longo do tempo?
+______________
+🔹 Etapa 2 — Perfil do responsável pelo domicílio
+5.	Qual a proporção de domicílios chefiados por homens e mulheres?
+6.	Qual a proporção de domicílios chefiados por raça/cor (brancos, pardos, pretos, indígenas, amarelos)?
+7.	Como essas proporções variam segundo a localização urbana/rural e por Unidade da Federação?
+______________
+🔹 Etapa 3 — Cruzamento de condição de ocupação com perfil do responsável
+8.	Entre os domicílios próprios, qual a proporção de responsáveis homens/mulheres?
+9.	Entre os domicílios alugados, qual a proporção de responsáveis homens/mulheres?
+10.	Entre os domicílios próprios, qual a distribuição por raça/cor do responsável?
+11.	Entre os domicílios alugados, qual a distribuição por raça/cor do responsável?
+12.	Como se distribuem os domicílios cedidos e em outra condição por gênero e raça/cor do responsável?
+______________
+🔹 Etapa 4 — Outras desigualdades relevantes
+13.	Qual é a renda média dos responsáveis por domicílio segundo gênero e raça/cor?
+14.	Como a escolaridade do responsável influencia a condição de ocupação (próprio vs alugado)?
+15.	Existe diferença entre a idade dos responsáveis por domicílios próprios e alugados?
+16.	Entre os domicílios próprios, qual a proporção de quitados e em aquisição (ainda pagando)? E como isso varia por gênero e raça do responsável?
+______________
+🔹 Etapa 5 — Séries históricas e comparações
+17.	Como a proporção de domicílios próprios e alugados mudou entre os Censos?
+18.	Como evoluiu a proporção de domicílios chefiados por mulheres nos diferentes Censos?
+19.	Como mudou a participação de brancos, pretos e pardos como responsáveis por domicílio nos diferentes censos que capturaram essa variável?
+20.	Qual é a diferença entre os dados do Censo e das PNADs contínuas para os mesmos indicadores (ex: domicílios alugados, responsáveis mulheres, etc.)?
+______________
+🔹 Etapa 6 — Entorno dos domicílios (infraestrutura urbana e serviços públicos)
+21.	Qual a proporção de domicílios que têm iluminação pública na rua do entorno?
+22.	Quantos domicílios têm pavimentação/asfalto na rua de acesso?
+23.	Qual a proporção de domicílios com calçada no entorno imediato?
+24.	Qual a proporção de domicílios em ruas com meio-fio/guia, bueiro ou boca de lobo?
+25.	Quantos domicílios estão próximos a esgoto a céu aberto ou lixo acumulado nas vias?
+26.	Como essas condições de entorno variam entre urbano/rural e entre regiões?
+27.	Há diferenças significativas no entorno dos domicílios quando se observa o gênero e a raça/cor do responsável?
+28.	Como evoluíram esses indicadores de entorno entre os censos?
+______________
+🔹 Etapa 7 — Favelas e aglomerados subnormais
+29.	Quantos domicílios se encontram em aglomerados subnormais (favelas, palafitas, ocupações irregulares etc.) no Brasil?
+30.	Qual a proporção da população brasileira que vive nesses aglomerados?
+31.	Qual é a distribuição por região e UF dos domicílios localizados em aglomerados subnormais?
+32.	Qual a proporção de domicílios próprios, alugados e cedidos dentro dos aglomerados subnormais?
+33.	Qual o perfil dos responsáveis por domicílios em favelas (por gênero, raça/cor, faixa etária)?
+34.	Como as condições de infraestrutura (água, esgoto, coleta de lixo, iluminação) diferem entre domicílios em aglomerados subnormais e fora deles?
+35.	Qual a renda média dos responsáveis por domicílios localizados em aglomerados subnormais, comparada à de outros domicílios urbanos?
+36.	Como evoluiu o número de domicílios em aglomerados subnormais entre os censos?
+37.	Existe diferença na proporção de domicílios em aglomerados subnormais quando se observa chefes mulheres vs homens, ou brancos vs pretos/pardos?
+38.	Qual a proporção de domicílios em aglomerados subnormais que estão em áreas de risco ambiental (encostas, margens de rio, áreas de inundação)? É possível capturar o gênero e a raça destes moradores?

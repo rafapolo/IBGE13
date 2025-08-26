@@ -171,6 +171,13 @@ O discurso republicano buscava construir a imagem de um **Brasil moderno, homog�
 
 ---
 
+## ⚠️ O Censo de 1930: Cancelado pela Revolução
+
+
+Em 1930, o censo demográfico **não foi realizado** devido à instabilidade política provocada pela Revolução de 1930, que marcou a queda da República Velha e a ascensão de Getúlio Vargas ao poder. O conflito político e institucional interrompeu a sequência decenal de recenseamentos iniciada em 1872.. A continuidade só foi retomada após a criação do Instituto Brasileiro de Geografia e Estatística (IBGE) em 1936, com a realização do próximo recenseamento em 1940
+
+✅. O Instituto Brasileiro de Geografia e Estatística (IBGE) foi criado no governo de Getúlio Vargas, em 1936, como parte do esforço de centralização e modernização do Estado após a Revolução de 1930.
+
 ## 4. 🏛️ O Censo de 1940: Início da Era IBGE
 
 - Foi o **VI censo nacional** e o **primeiro sob o IBGE**

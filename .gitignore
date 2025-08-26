@@ -1,3 +1,7 @@
 .R*
 Censos/
 .DS_Store
+censobr/
+schemas/
+scrap/
+series/
