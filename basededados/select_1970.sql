@@ -10,8 +10,7 @@ SELECT
     WHEN '3' THEN 'Alugado'
     WHEN '4' THEN 'Cedido'
     WHEN '5' THEN 'Outra condição'
-    WHEN '0' THEN 'NIU / não se aplica'
-    WHEN '9' THEN 'Ignorado / sem declaração'
+    WHEN '0' THEN 'sem declaracao'
     ELSE 'Não classificado'
   END AS condicao_txt,
 
@@ -29,15 +28,17 @@ SELECT
   -- Tipo do domicílio (v008)
   d.v008 AS tipo_cod,
   CASE d.v008
-    WHEN '1' THEN 'Casa'
-    WHEN '0' THEN 'Apartamento'
+    WHEN '1' THEN 'Durável'
+    WHEN '0' THEN 'Rústico'
+    WHEN '0' THEN 'Improvisado'
     ELSE 'Outro'
   END AS tipo_txt,
 
   -- Situação do domicílio (v004)
   d.v004 AS situacao_cod,
   CASE d.v004
-    WHEN '1' THEN 'Urbano'
+    WHEN '0' THEN 'Urbano'
+    WHEN '1' THEN 'Suburbano'
     WHEN '2' THEN 'Rural'
     ELSE 'Não classificado'
   END AS situacao_urb_rur,

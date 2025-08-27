@@ -3,8 +3,8 @@ SELECT
 
   d.v209 AS condicao_cod,
   CASE d.v209
-    WHEN '1' THEN 'Próprio – já pago'
-    WHEN '3' THEN 'Próprio – em aquisição'
+    WHEN '1' THEN 'Próprio já pago'
+    WHEN '3' THEN 'Próprio em aquisição'
     WHEN '5' THEN 'Alugado'
     WHEN '6' THEN 'Cedido por empregador'
     WHEN '7' THEN 'Cedido por particular'
@@ -23,20 +23,21 @@ SELECT
     ELSE 'Não classificado'
   END AS especie_txt,
 
-  d.v202 AS tipo_cod,
-  CASE d.v202
-    WHEN '1' THEN 'Casa'
-    WHEN '3' THEN 'Apartamento'
-    ELSE 'Outro'
-  END AS tipo_txt,
+d.v202 AS tipo_cod,
+CASE d.v202
+  WHEN '1' THEN 'Casa'
+  WHEN '3' THEN 'Apartamento'
+  ELSE 'ignorado'
+END AS tipo_txt,
 
   d.v198 AS situacao_cod,
   CASE d.v198
-    WHEN 5 THEN 'Rural'
-    WHEN 1 THEN 'Urbano'
-    WHEN 3 THEN 'Urbano'
-    ELSE NULL
-  END AS situacao_urb_rur,
+    WHEN 1 THEN 'Cidade ou Vila'
+    WHEN 3 THEN 'Área urbana isolada'
+    WHEN 5 THEN 'Aglomerado rural'
+    WHEN 7 THEN 'Zona rural'
+    ELSE 'ignorado'
+end as situacao_urb_rur,
 
   COUNT(*) AS total_domicilios
 FROM `basedosdados.br_ibge_censo_demografico.microdados_domicilio_1980` d
