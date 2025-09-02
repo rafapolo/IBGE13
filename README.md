@@ -1,4 +1,6 @@
-#### Um retrato público dos dados de Habitaçao nos últimas 60 anos.
+#### Um retrato público dos dados de Habitaçao nos últimas 60 anos. 
+
+=> Ver [DataViz](fluxos.md) !
 
 
 # 📊 Síntese dos Censos (1872–2022)
