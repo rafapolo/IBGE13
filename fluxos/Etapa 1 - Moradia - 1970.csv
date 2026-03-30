@@ -1,0 +1,40 @@
+situacao_urb_rur,condicao_txt,tipo_txt,total_pessoas
+Não classificado,NIU / ignorado,Apartamento,950
+Urbano,NIU / ignorado,Apartamento,18
+Rural,NIU / ignorado,Apartamento,466
+Não classificado,NIU / ignorado,Casa,218
+Urbano,NIU / ignorado,Casa,8
+Rural,NIU / ignorado,Casa,309
+Não classificado,Próprio – já pago,Apartamento,
+Não classificado,Próprio – já pago,Apartamento,5641275
+Urbano,Próprio – já pago,Apartamento,249308
+Rural,Próprio – já pago,Apartamento,4022372
+Não classificado,Próprio – já pago,Casa,960945
+Urbano,Próprio – já pago,Casa,95928
+Rural,Próprio – já pago,Casa,2491748
+Não classificado,Próprio – em aquisição,Apartamento,930161
+Urbano,Próprio – em aquisição,Apartamento,29182
+Rural,Próprio – em aquisição,Apartamento,72829
+Não classificado,Próprio – em aquisição,Casa,90883
+Urbano,Próprio – em aquisição,Casa,4020
+Rural,Próprio – em aquisição,Casa,38632
+Não classificado,Alugado,Apartamento,3158371
+Urbano,Alugado,Apartamento,85622
+Rural,Alugado,Apartamento,221008
+Não classificado,Alugado,Apartamento,2
+Não classificado,Alugado,Casa,416655
+Urbano,Alugado,Casa,23691
+Rural,Alugado,Casa,79499
+Não classificado,Cedido,Apartamento,698718
+Urbano,Cedido,Apartamento,27249
+Rural,Cedido,Apartamento,509907
+Não classificado,Cedido,Casa,207690
+Urbano,Cedido,Casa,13493
+Rural,Cedido,Casa,410111
+Não classificado,Outra condição,Apartamento,90531
+Urbano,Outra condição,Apartamento,7837
+Rural,Outra condição,Apartamento,1560701
+Não classificado,Outra condição,Casa,49337
+Urbano,Outra condição,Casa,5298
+Rural,Outra condição,Casa,1299166
+Não classificado,Ignorado / sem declaração,Apartamento,16

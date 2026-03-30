@@ -1,0 +1,39 @@
+situacao_urb_rur,condicao_txt,tipo_txt,total_pessoas
+Urbano,NIU/ignorado,Outro/NIU,108024
+Rural,NIU/ignorado,Outro/NIU,70761
+Urbano,Proprio pago,Casa,10043599
+Rural,Proprio pago,Casa,3464405
+Urbano,Proprio pago,Apartamento,601996
+Rural,Proprio pago,Apartamento,2702
+Urbano,Proprio pago,Cômodo,61647
+Rural,Proprio pago,Cômodo,8943
+Urbano,Proprio em aquisicao,Casa,867495
+Rural,Proprio em aquisicao,Casa,66147
+Urbano,Proprio em aquisicao,Apartamento,276047
+Rural,Proprio em aquisicao,Apartamento,11583
+Urbano,Proprio em aquisicao,Cômodo,3200
+Rural,Proprio em aquisicao,Cômodo,270
+Urbano,Alugado,Casa,1841585
+Rural,Alugado,Casa,66146
+Urbano,Alugado,Apartamento,314616
+Rural,Alugado,Apartamento,807
+Urbano,Alugado,Cômodo,49824
+Rural,Alugado,Cômodo,923
+Urbano,Cedido por empregador,Casa,183961
+Rural,Cedido por empregador,Casa,772902
+Urbano,Cedido por empregador,Apartamento,20353
+Rural,Cedido por empregador,Apartamento,742
+Urbano,Cedido por empregador,Cômodo,3682
+Rural,Cedido por empregador,Cômodo,3192
+Urbano,Cedido de outra forma,Casa,793576
+Rural,Cedido de outra forma,Casa,331033
+Urbano,Cedido de outra forma,Apartamento,35577
+Rural,Cedido de outra forma,Apartamento,395
+Urbano,Cedido de outra forma,Cômodo,26189
+Rural,Cedido de outra forma,Cômodo,3084
+Urbano,Outra condição,Casa,155455
+Rural,Outra condição,Casa,66776
+Urbano,Outra condição,Apartamento,7991
+Rural,Outra condição,Apartamento,260
+Urbano,Outra condição,Cômodo,7499
+Rural,Outra condição,Cômodo,1025

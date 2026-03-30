@@ -1,0 +1,255 @@
+situacao_urb_rur,condicao_txt,tipo_txt,total_pessoas
+Cidade ou Vila,Não classificado,Não classificado,94259
+Área urbana isolada,Não classificado,Não classificado,937
+Aglomerado rural de extensão urbana,Não classificado,Não classificado,580
+Aglomerado rural isolado,Não classificado,Não classificado,585
+Núcleo colonial,Não classificado,Não classificado,2708
+Povoado,Não classificado,Não classificado,525
+Zona rural exclusiva,Não classificado,Não classificado,383
+NIU/ignorado,Não classificado,Não classificado,32430
+Cidade ou Vila,Próprio – já pago,Casa,6341024
+Cidade ou Vila,Próprio – já pago,Apartamento,647405
+Cidade ou Vila,Próprio – já pago,Oca / maloca (habitação indígena),449467
+Cidade ou Vila,Próprio – já pago,"Cômodo (cortiço, cabeça-de-porco, etc.)",209660
+Cidade ou Vila,Próprio – já pago,"Unidade em prédio não residencial (loja, galpão, etc.)",139693
+Cidade ou Vila,Próprio – já pago,Outro tipo de domicílio,6247
+Cidade ou Vila,Próprio – já pago,"Unidade improvisada (barraco, tenda, etc.)",2244
+Área urbana isolada,Próprio – já pago,Oca / maloca (habitação indígena),266
+Área urbana isolada,Próprio – já pago,"Unidade improvisada (barraco, tenda, etc.)",3
+Área urbana isolada,Próprio – já pago,Casa,44732
+Área urbana isolada,Próprio – já pago,Outro tipo de domicílio,14
+Área urbana isolada,Próprio – já pago,"Cômodo (cortiço, cabeça-de-porco, etc.)",467
+Área urbana isolada,Próprio – já pago,Apartamento,2473
+Aglomerado rural de extensão urbana,Próprio – já pago,Apartamento,4580
+Aglomerado rural de extensão urbana,Próprio – já pago,"Cômodo (cortiço, cabeça-de-porco, etc.)",309
+Aglomerado rural de extensão urbana,Próprio – já pago,"Unidade improvisada (barraco, tenda, etc.)",2
+Aglomerado rural de extensão urbana,Próprio – já pago,Outro tipo de domicílio,21
+Aglomerado rural de extensão urbana,Próprio – já pago,"Unidade em prédio não residencial (loja, galpão, etc.)",45
+Aglomerado rural de extensão urbana,Próprio – já pago,Oca / maloca (habitação indígena),163
+Aglomerado rural de extensão urbana,Próprio – já pago,Casa,52131
+Aglomerado rural isolado,Próprio – já pago,Oca / maloca (habitação indígena),1130
+Aglomerado rural isolado,Próprio – já pago,"Unidade improvisada (barraco, tenda, etc.)",13
+Aglomerado rural isolado,Próprio – já pago,Apartamento,36699
+Aglomerado rural isolado,Próprio – já pago,"Cômodo (cortiço, cabeça-de-porco, etc.)",16692
+Aglomerado rural isolado,Próprio – já pago,"Unidade em prédio não residencial (loja, galpão, etc.)",7351
+Aglomerado rural isolado,Próprio – já pago,Outro tipo de domicílio,15
+Aglomerado rural isolado,Próprio – já pago,Casa,44703
+Núcleo colonial,Próprio – já pago,Apartamento,10543
+Núcleo colonial,Próprio – já pago,"Unidade em prédio não residencial (loja, galpão, etc.)",663
+Núcleo colonial,Próprio – já pago,Outro tipo de domicílio,112
+Núcleo colonial,Próprio – já pago,Oca / maloca (habitação indígena),122
+Núcleo colonial,Próprio – já pago,"Cômodo (cortiço, cabeça-de-porco, etc.)",2217
+Núcleo colonial,Próprio – já pago,Casa,288966
+Povoado,Próprio – já pago,Apartamento,453
+Povoado,Próprio – já pago,Outro tipo de domicílio,3
+Povoado,Próprio – já pago,Casa,1893
+Zona rural exclusiva,Próprio – já pago,Casa,4883
+Zona rural exclusiva,Próprio – já pago,Apartamento,638
+Zona rural exclusiva,Próprio – já pago,"Cômodo (cortiço, cabeça-de-porco, etc.)",8
+NIU/ignorado,Próprio – já pago,Casa,2450745
+NIU/ignorado,Próprio – já pago,Apartamento,6929
+NIU/ignorado,Próprio – já pago,"Cômodo (cortiço, cabeça-de-porco, etc.)",12825
+NIU/ignorado,Próprio – já pago,Oca / maloca (habitação indígena),1186
+NIU/ignorado,Próprio – já pago,Outro tipo de domicílio,690
+NIU/ignorado,Próprio – já pago,"Unidade em prédio não residencial (loja, galpão, etc.)",62
+NIU/ignorado,Próprio – já pago,"Unidade improvisada (barraco, tenda, etc.)",32
+Cidade ou Vila,Próprio – em aquisição,"Cômodo (cortiço, cabeça-de-porco, etc.)",364471
+Cidade ou Vila,Próprio – em aquisição,Apartamento,17042
+Cidade ou Vila,Próprio – em aquisição,Outro tipo de domicílio,2641
+Cidade ou Vila,Próprio – em aquisição,Oca / maloca (habitação indígena),19521
+Cidade ou Vila,Próprio – em aquisição,Casa,474133
+Cidade ou Vila,Próprio – em aquisição,"Unidade em prédio não residencial (loja, galpão, etc.)",6887
+Cidade ou Vila,Próprio – em aquisição,"Unidade improvisada (barraco, tenda, etc.)",2650
+Área urbana isolada,Próprio – em aquisição,Oca / maloca (habitação indígena),49
+Área urbana isolada,Próprio – em aquisição,Outro tipo de domicílio,39
+Área urbana isolada,Próprio – em aquisição,Casa,5711
+Área urbana isolada,Próprio – em aquisição,"Cômodo (cortiço, cabeça-de-porco, etc.)",1746
+Área urbana isolada,Próprio – em aquisição,Apartamento,157
+Área urbana isolada,Próprio – em aquisição,"Unidade improvisada (barraco, tenda, etc.)",5
+Aglomerado rural de extensão urbana,Próprio – em aquisição,Casa,4695
+Aglomerado rural de extensão urbana,Próprio – em aquisição,Apartamento,319
+Aglomerado rural de extensão urbana,Próprio – em aquisição,"Cômodo (cortiço, cabeça-de-porco, etc.)",1118
+Aglomerado rural de extensão urbana,Próprio – em aquisição,"Unidade em prédio não residencial (loja, galpão, etc.)",4
+Aglomerado rural de extensão urbana,Próprio – em aquisição,Oca / maloca (habitação indígena),20
+Aglomerado rural isolado,Próprio – em aquisição,Oca / maloca (habitação indígena),15
+Aglomerado rural isolado,Próprio – em aquisição,"Unidade improvisada (barraco, tenda, etc.)",18
+Aglomerado rural isolado,Próprio – em aquisição,Apartamento,310
+Aglomerado rural isolado,Próprio – em aquisição,Casa,6552
+Aglomerado rural isolado,Próprio – em aquisição,"Cômodo (cortiço, cabeça-de-porco, etc.)",12389
+Aglomerado rural isolado,Próprio – em aquisição,Outro tipo de domicílio,38
+Aglomerado rural isolado,Próprio – em aquisição,"Unidade em prédio não residencial (loja, galpão, etc.)",46
+Núcleo colonial,Próprio – em aquisição,Apartamento,249
+Núcleo colonial,Próprio – em aquisição,"Cômodo (cortiço, cabeça-de-porco, etc.)",3554
+Núcleo colonial,Próprio – em aquisição,Casa,31062
+Núcleo colonial,Próprio – em aquisição,Outro tipo de domicílio,6
+Povoado,Próprio – em aquisição,"Cômodo (cortiço, cabeça-de-porco, etc.)",4
+Povoado,Próprio – em aquisição,Apartamento,51
+Povoado,Próprio – em aquisição,Casa,478
+Zona rural exclusiva,Próprio – em aquisição,Casa,342
+Zona rural exclusiva,Próprio – em aquisição,"Cômodo (cortiço, cabeça-de-porco, etc.)",27
+NIU/ignorado,Próprio – em aquisição,"Cômodo (cortiço, cabeça-de-porco, etc.)",10470
+NIU/ignorado,Próprio – em aquisição,Casa,480367
+NIU/ignorado,Próprio – em aquisição,"Unidade em prédio não residencial (loja, galpão, etc.)",48
+NIU/ignorado,Próprio – em aquisição,"Unidade improvisada (barraco, tenda, etc.)",9
+NIU/ignorado,Próprio – em aquisição,Oca / maloca (habitação indígena),179
+NIU/ignorado,Próprio – em aquisição,Apartamento,747
+NIU/ignorado,Próprio – em aquisição,Outro tipo de domicílio,74
+Cidade ou Vila,Alugado,"Unidade em prédio não residencial (loja, galpão, etc.)",18535
+Cidade ou Vila,Alugado,Casa,1686221
+Cidade ou Vila,Alugado,"Unidade improvisada (barraco, tenda, etc.)",1404
+Cidade ou Vila,Alugado,Oca / maloca (habitação indígena),246871
+Cidade ou Vila,Alugado,Apartamento,62163
+Cidade ou Vila,Alugado,Outro tipo de domicílio,34034
+Cidade ou Vila,Alugado,"Cômodo (cortiço, cabeça-de-porco, etc.)",40243
+Área urbana isolada,Alugado,Oca / maloca (habitação indígena),199
+Área urbana isolada,Alugado,Outro tipo de domicílio,32
+Área urbana isolada,Alugado,Apartamento,174
+Área urbana isolada,Alugado,Casa,6249
+Área urbana isolada,Alugado,"Cômodo (cortiço, cabeça-de-porco, etc.)",80
+Aglomerado rural de extensão urbana,Alugado,Oca / maloca (habitação indígena),107
+Aglomerado rural de extensão urbana,Alugado,"Cômodo (cortiço, cabeça-de-porco, etc.)",77
+Aglomerado rural de extensão urbana,Alugado,Casa,7777
+Aglomerado rural de extensão urbana,Alugado,Apartamento,349
+Aglomerado rural de extensão urbana,Alugado,Outro tipo de domicílio,65
+Aglomerado rural isolado,Alugado,Oca / maloca (habitação indígena),393
+Aglomerado rural isolado,Alugado,Apartamento,2217
+Aglomerado rural isolado,Alugado,"Cômodo (cortiço, cabeça-de-porco, etc.)",1015
+Aglomerado rural isolado,Alugado,Outro tipo de domicílio,117
+Aglomerado rural isolado,Alugado,"Unidade improvisada (barraco, tenda, etc.)",12
+Aglomerado rural isolado,Alugado,Casa,5205
+Aglomerado rural isolado,Alugado,"Unidade em prédio não residencial (loja, galpão, etc.)",351
+Núcleo colonial,Alugado,Apartamento,658
+Núcleo colonial,Alugado,"Unidade em prédio não residencial (loja, galpão, etc.)",44
+Núcleo colonial,Alugado,"Cômodo (cortiço, cabeça-de-porco, etc.)",254
+Núcleo colonial,Alugado,Outro tipo de domicílio,156
+Núcleo colonial,Alugado,Oca / maloca (habitação indígena),73
+Núcleo colonial,Alugado,Casa,17428
+Povoado,Alugado,Apartamento,503
+Povoado,Alugado,Casa,3305
+Povoado,Alugado,Oca / maloca (habitação indígena),4
+Povoado,Alugado,"Cômodo (cortiço, cabeça-de-porco, etc.)",4
+Povoado,Alugado,Outro tipo de domicílio,1
+Zona rural exclusiva,Alugado,Casa,368
+NIU/ignorado,Alugado,Outro tipo de domicílio,77
+NIU/ignorado,Alugado,Apartamento,614
+NIU/ignorado,Alugado,Casa,45919
+NIU/ignorado,Alugado,Oca / maloca (habitação indígena),133
+NIU/ignorado,Alugado,"Cômodo (cortiço, cabeça-de-porco, etc.)",267
+NIU/ignorado,Alugado,"Unidade em prédio não residencial (loja, galpão, etc.)",21
+Cidade ou Vila,Cedido por empregador,Outro tipo de domicílio,1246
+Cidade ou Vila,Cedido por empregador,Casa,176174
+Cidade ou Vila,Cedido por empregador,"Unidade improvisada (barraco, tenda, etc.)",19
+Cidade ou Vila,Cedido por empregador,Apartamento,7095
+Cidade ou Vila,Cedido por empregador,"Unidade em prédio não residencial (loja, galpão, etc.)",316
+Cidade ou Vila,Cedido por empregador,Oca / maloca (habitação indígena),19930
+Cidade ou Vila,Cedido por empregador,"Cômodo (cortiço, cabeça-de-porco, etc.)",1851
+Área urbana isolada,Cedido por empregador,"Cômodo (cortiço, cabeça-de-porco, etc.)",31
+Área urbana isolada,Cedido por empregador,Apartamento,59
+Área urbana isolada,Cedido por empregador,Outro tipo de domicílio,56
+Área urbana isolada,Cedido por empregador,Casa,13206
+Área urbana isolada,Cedido por empregador,Oca / maloca (habitação indígena),85
+Aglomerado rural de extensão urbana,Cedido por empregador,Apartamento,43
+Aglomerado rural de extensão urbana,Cedido por empregador,"Cômodo (cortiço, cabeça-de-porco, etc.)",14
+Aglomerado rural de extensão urbana,Cedido por empregador,Oca / maloca (habitação indígena),1
+Aglomerado rural de extensão urbana,Cedido por empregador,Casa,6742
+Aglomerado rural de extensão urbana,Cedido por empregador,"Unidade em prédio não residencial (loja, galpão, etc.)",2
+Aglomerado rural de extensão urbana,Cedido por empregador,Outro tipo de domicílio,13
+Aglomerado rural isolado,Cedido por empregador,"Unidade em prédio não residencial (loja, galpão, etc.)",9
+Aglomerado rural isolado,Cedido por empregador,Oca / maloca (habitação indígena),11
+Aglomerado rural isolado,Cedido por empregador,"Unidade improvisada (barraco, tenda, etc.)",3
+Aglomerado rural isolado,Cedido por empregador,Apartamento,317
+Aglomerado rural isolado,Cedido por empregador,Casa,2371
+Aglomerado rural isolado,Cedido por empregador,"Cômodo (cortiço, cabeça-de-porco, etc.)",95
+Aglomerado rural isolado,Cedido por empregador,Outro tipo de domicílio,2
+Núcleo colonial,Cedido por empregador,Outro tipo de domicílio,27
+Núcleo colonial,Cedido por empregador,Apartamento,2018
+Núcleo colonial,Cedido por empregador,"Cômodo (cortiço, cabeça-de-porco, etc.)",202
+Núcleo colonial,Cedido por empregador,Casa,10940
+Núcleo colonial,Cedido por empregador,Oca / maloca (habitação indígena),101
+Povoado,Cedido por empregador,Casa,13444
+Povoado,Cedido por empregador,"Cômodo (cortiço, cabeça-de-porco, etc.)",11
+Povoado,Cedido por empregador,Outro tipo de domicílio,12
+Povoado,Cedido por empregador,Oca / maloca (habitação indígena),13
+Povoado,Cedido por empregador,Apartamento,2929
+Zona rural exclusiva,Cedido por empregador,Casa,635
+Zona rural exclusiva,Cedido por empregador,Apartamento,44
+NIU/ignorado,Cedido por empregador,Casa,926932
+NIU/ignorado,Cedido por empregador,Oca / maloca (habitação indígena),708
+NIU/ignorado,Cedido por empregador,"Cômodo (cortiço, cabeça-de-porco, etc.)",2933
+NIU/ignorado,Cedido por empregador,Outro tipo de domicílio,908
+NIU/ignorado,Cedido por empregador,Apartamento,3238
+NIU/ignorado,Cedido por empregador,"Unidade em prédio não residencial (loja, galpão, etc.)",41
+Cidade ou Vila,Cedido de outra forma,Apartamento,36168
+Cidade ou Vila,Cedido de outra forma,Oca / maloca (habitação indígena),27951
+Cidade ou Vila,Cedido de outra forma,"Unidade em prédio não residencial (loja, galpão, etc.)",4620
+Cidade ou Vila,Cedido de outra forma,"Unidade improvisada (barraco, tenda, etc.)",239
+Cidade ou Vila,Cedido de outra forma,Outro tipo de domicílio,6981
+Cidade ou Vila,Cedido de outra forma,Casa,663471
+Cidade ou Vila,Cedido de outra forma,"Cômodo (cortiço, cabeça-de-porco, etc.)",19732
+Área urbana isolada,Cedido de outra forma,Apartamento,108
+Área urbana isolada,Cedido de outra forma,"Cômodo (cortiço, cabeça-de-porco, etc.)",105
+Área urbana isolada,Cedido de outra forma,Outro tipo de domicílio,34
+Área urbana isolada,Cedido de outra forma,Oca / maloca (habitação indígena),76
+Área urbana isolada,Cedido de outra forma,Casa,5659
+Aglomerado rural de extensão urbana,Cedido de outra forma,Casa,5779
+Aglomerado rural de extensão urbana,Cedido de outra forma,Oca / maloca (habitação indígena),32
+Aglomerado rural de extensão urbana,Cedido de outra forma,Outro tipo de domicílio,19
+Aglomerado rural de extensão urbana,Cedido de outra forma,Apartamento,240
+Aglomerado rural de extensão urbana,Cedido de outra forma,"Cômodo (cortiço, cabeça-de-porco, etc.)",52
+Aglomerado rural isolado,Cedido de outra forma,Apartamento,1413
+Aglomerado rural isolado,Cedido de outra forma,"Unidade improvisada (barraco, tenda, etc.)",1
+Aglomerado rural isolado,Cedido de outra forma,Casa,3094
+Aglomerado rural isolado,Cedido de outra forma,"Cômodo (cortiço, cabeça-de-porco, etc.)",812
+Aglomerado rural isolado,Cedido de outra forma,Outro tipo de domicílio,28
+Aglomerado rural isolado,Cedido de outra forma,"Unidade em prédio não residencial (loja, galpão, etc.)",256
+Aglomerado rural isolado,Cedido de outra forma,Oca / maloca (habitação indígena),50
+Núcleo colonial,Cedido de outra forma,Apartamento,631
+Núcleo colonial,Cedido de outra forma,Casa,22877
+Núcleo colonial,Cedido de outra forma,Oca / maloca (habitação indígena),18
+Núcleo colonial,Cedido de outra forma,"Unidade em prédio não residencial (loja, galpão, etc.)",83
+Núcleo colonial,Cedido de outra forma,Outro tipo de domicílio,57
+Núcleo colonial,Cedido de outra forma,"Cômodo (cortiço, cabeça-de-porco, etc.)",300
+Povoado,Cedido de outra forma,Casa,248
+Povoado,Cedido de outra forma,Apartamento,65
+Zona rural exclusiva,Cedido de outra forma,Casa,294
+Zona rural exclusiva,Cedido de outra forma,Apartamento,34
+NIU/ignorado,Cedido de outra forma,"Unidade em prédio não residencial (loja, galpão, etc.)",7
+NIU/ignorado,Cedido de outra forma,Apartamento,784
+NIU/ignorado,Cedido de outra forma,Oca / maloca (habitação indígena),226
+NIU/ignorado,Cedido de outra forma,Casa,368192
+NIU/ignorado,Cedido de outra forma,Outro tipo de domicílio,294
+NIU/ignorado,Cedido de outra forma,"Cômodo (cortiço, cabeça-de-porco, etc.)",892
+Cidade ou Vila,Outra condição,Oca / maloca (habitação indígena),2422
+Cidade ou Vila,Outra condição,"Unidade em prédio não residencial (loja, galpão, etc.)",760
+Cidade ou Vila,Outra condição,"Cômodo (cortiço, cabeça-de-porco, etc.)",6938
+Cidade ou Vila,Outra condição,Outro tipo de domicílio,1221
+Cidade ou Vila,Outra condição,Casa,41083
+Cidade ou Vila,Outra condição,Apartamento,7644
+Cidade ou Vila,Outra condição,"Unidade improvisada (barraco, tenda, etc.)",50
+Área urbana isolada,Outra condição,Outro tipo de domicílio,4
+Área urbana isolada,Outra condição,Apartamento,87
+Área urbana isolada,Outra condição,Casa,568
+Área urbana isolada,Outra condição,Oca / maloca (habitação indígena),7
+Área urbana isolada,Outra condição,"Cômodo (cortiço, cabeça-de-porco, etc.)",88
+Aglomerado rural de extensão urbana,Outra condição,Outro tipo de domicílio,14
+Aglomerado rural de extensão urbana,Outra condição,"Cômodo (cortiço, cabeça-de-porco, etc.)",14
+Aglomerado rural de extensão urbana,Outra condição,Apartamento,30
+Aglomerado rural de extensão urbana,Outra condição,Casa,456
+Aglomerado rural isolado,Outra condição,Casa,249
+Aglomerado rural isolado,Outra condição,"Unidade em prédio não residencial (loja, galpão, etc.)",69
+Aglomerado rural isolado,Outra condição,Apartamento,491
+Aglomerado rural isolado,Outra condição,Outro tipo de domicílio,8
+Aglomerado rural isolado,Outra condição,"Cômodo (cortiço, cabeça-de-porco, etc.)",75
+Núcleo colonial,Outra condição,"Cômodo (cortiço, cabeça-de-porco, etc.)",33
+Núcleo colonial,Outra condição,Outro tipo de domicílio,10
+Núcleo colonial,Outra condição,Casa,1969
+Núcleo colonial,Outra condição,Apartamento,409
+Povoado,Outra condição,Casa,216
+Povoado,Outra condição,Apartamento,72
+Zona rural exclusiva,Outra condição,Casa,49
+Zona rural exclusiva,Outra condição,Apartamento,21
+NIU/ignorado,Outra condição,Casa,58037
+NIU/ignorado,Outra condição,Outro tipo de domicílio,79
+NIU/ignorado,Outra condição,Oca / maloca (habitação indígena),20
+NIU/ignorado,Outra condição,"Cômodo (cortiço, cabeça-de-porco, etc.)",494
+NIU/ignorado,Outra condição,Apartamento,386

@@ -1,0 +1,55 @@
+situacao_urb_rur,condicao_txt,tipo_txt,total_domicilios
+Cidade ou Vila,Outra condição,Casa,51825
+Área urbana isolada,Outra condição,Casa,339
+Aglomerado rural,Outra condição,Casa,3323
+Zona rural,Outra condição,Casa,46878
+Cidade ou Vila,Outra condição,Apartamento,3085
+Área urbana isolada,Outra condição,Apartamento,3
+Aglomerado rural,Outra condição,Apartamento,7
+Zona rural,Outra condição,Apartamento,36
+Cidade ou Vila,Próprio já pago,Casa,2219461
+Área urbana isolada,Próprio já pago,Casa,15503
+Aglomerado rural,Próprio já pago,Casa,124613
+Zona rural,Próprio já pago,Casa,1124727
+Cidade ou Vila,Próprio já pago,Apartamento,115070
+Área urbana isolada,Próprio já pago,Apartamento,33
+Aglomerado rural,Próprio já pago,Apartamento,115
+Zona rural,Próprio já pago,Apartamento,434
+Cidade ou Vila,Próprio em aquisição,Casa,238177
+Área urbana isolada,Próprio em aquisição,Casa,1210
+Aglomerado rural,Próprio em aquisição,Casa,10467
+Zona rural,Próprio em aquisição,Casa,8212
+Cidade ou Vila,Próprio em aquisição,Apartamento,106300
+Área urbana isolada,Próprio em aquisição,Apartamento,2
+Aglomerado rural,Próprio em aquisição,Apartamento,688
+Zona rural,Próprio em aquisição,Apartamento,18
+Cidade ou Vila,Alugado,Casa,1151628
+Área urbana isolada,Alugado,Casa,6033
+Aglomerado rural,Alugado,Casa,19365
+Zona rural,Alugado,Casa,34447
+Cidade ou Vila,Alugado,Apartamento,191864
+Área urbana isolada,Alugado,Apartamento,65
+Aglomerado rural,Alugado,Apartamento,207
+Zona rural,Alugado,Apartamento,224
+Cidade ou Vila,Cedido por empregador,Casa,80523
+Área urbana isolada,Cedido por empregador,Casa,1876
+Aglomerado rural,Cedido por empregador,Casa,13125
+Zona rural,Cedido por empregador,Casa,428734
+Cidade ou Vila,Cedido por empregador,Apartamento,15498
+Área urbana isolada,Cedido por empregador,Apartamento,17
+Aglomerado rural,Cedido por empregador,Apartamento,40
+Zona rural,Cedido por empregador,Apartamento,342
+Cidade ou Vila,Cedido por particular,Casa,262234
+Área urbana isolada,Cedido por particular,Casa,1899
+Aglomerado rural,Cedido por particular,Casa,8797
+Zona rural,Cedido por particular,Casa,170360
+Cidade ou Vila,Cedido por particular,Apartamento,15030
+Área urbana isolada,Cedido por particular,Apartamento,11
+Aglomerado rural,Cedido por particular,Apartamento,39
+Zona rural,Cedido por particular,Apartamento,118
+Cidade ou Vila,NIU / ignorado,Casa,5012
+Área urbana isolada,NIU / ignorado,Casa,38
+Aglomerado rural,NIU / ignorado,Casa,437
+Zona rural,NIU / ignorado,Casa,3632
+Cidade ou Vila,NIU / ignorado,Apartamento,1415
+Zona rural,NIU / ignorado,Apartamento,5

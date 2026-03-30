@@ -1,0 +1,71 @@
+situacao_urb_rur,condicao_txt,tipo_txt,total_domicilios
+Urbano,NIU/ignorado,Tenda ou barraca,1385
+Rural,NIU/ignorado,Tenda ou barraca,3629
+Urbano,NIU/ignorado,Dentro de estabelecimento nao residencial,5505
+Rural,NIU/ignorado,Dentro de estabelecimento nao residencial,1675
+Urbano,NIU/ignorado,"Outro (vagão, trailer, gruta, etc.)",917
+Rural,NIU/ignorado,"Outro (vagão, trailer, gruta, etc.)",908
+Urbano,NIU/ignorado,"Asilo, orfanato ou similar",16771
+Rural,NIU/ignorado,"Asilo, orfanato ou similar",1415
+Urbano,NIU/ignorado,"Hotel, pensao ou similar",4302
+Rural,NIU/ignorado,"Hotel, pensao ou similar",450
+Urbano,NIU/ignorado,Alojamento de trabalhadores,2771
+Rural,NIU/ignorado,Alojamento de trabalhadores,2678
+Urbano,NIU/ignorado,"Penitenciaria, presidio ou casa de detencao",16673
+Rural,NIU/ignorado,"Penitenciaria, presidio ou casa de detencao",15844
+Urbano,NIU/ignorado,Outro coletivo,2523
+Rural,NIU/ignorado,Outro coletivo,999
+Urbano,Proprio quitado,Casa,3027337
+Rural,Proprio quitado,Casa,999835
+Urbano,Proprio quitado,Casa de vila ou condominio,31669
+Rural,Proprio quitado,Casa de vila ou condominio,2903
+Urbano,Proprio quitado,Apartamento,197491
+Rural,Proprio quitado,Apartamento,378
+Urbano,Proprio quitado,Habitacao em comodo ou cortico,6460
+Rural,Proprio quitado,Habitacao em comodo ou cortico,720
+Urbano,Proprio quitado,Oca / maloca (indigena),19
+Rural,Proprio quitado,Oca / maloca (indigena),2100
+Urbano,Proprio em aquisicao,Casa,195063
+Rural,Proprio em aquisicao,Casa,19550
+Urbano,Proprio em aquisicao,Casa de vila ou condominio,7419
+Rural,Proprio em aquisicao,Casa de vila ou condominio,311
+Urbano,Proprio em aquisicao,Apartamento,59686
+Rural,Proprio em aquisicao,Apartamento,125
+Urbano,Proprio em aquisicao,Habitacao em comodo ou cortico,171
+Rural,Proprio em aquisicao,Habitacao em comodo ou cortico,19
+Rural,Proprio em aquisicao,Oca / maloca (indigena),4
+Urbano,Alugado,Casa,770199
+Rural,Alugado,Casa,29694
+Urbano,Alugado,Casa de vila ou condominio,23551
+Rural,Alugado,Casa de vila ou condominio,570
+Urbano,Alugado,Apartamento,133349
+Rural,Alugado,Apartamento,233
+Urbano,Alugado,Habitacao em comodo ou cortico,10071
+Rural,Alugado,Habitacao em comodo ou cortico,179
+Urbano,Cedido por empregador,Casa,36391
+Rural,Cedido por empregador,Casa,151579
+Urbano,Cedido por empregador,Casa de vila ou condominio,1399
+Rural,Cedido por empregador,Casa de vila ou condominio,1167
+Urbano,Cedido por empregador,Apartamento,4013
+Rural,Cedido por empregador,Apartamento,190
+Urbano,Cedido por empregador,Habitacao em comodo ou cortico,298
+Rural,Cedido por empregador,Habitacao em comodo ou cortico,346
+Rural,Cedido por empregador,Oca / maloca (indigena),2
+Urbano,Cedido de outra forma,Casa,250958
+Rural,Cedido de outra forma,Casa,95085
+Urbano,Cedido de outra forma,Casa de vila ou condominio,2733
+Rural,Cedido de outra forma,Casa de vila ou condominio,397
+Urbano,Cedido de outra forma,Apartamento,11583
+Rural,Cedido de outra forma,Apartamento,76
+Urbano,Cedido de outra forma,Habitacao em comodo ou cortico,2322
+Rural,Cedido de outra forma,Habitacao em comodo ou cortico,246
+Rural,Cedido de outra forma,Oca / maloca (indigena),87
+Urbano,Outra condicao,Casa,21519
+Rural,Outra condicao,Casa,11279
+Urbano,Outra condicao,Casa de vila ou condominio,469
+Rural,Outra condicao,Casa de vila ou condominio,69
+Urbano,Outra condicao,Apartamento,1399
+Rural,Outra condicao,Apartamento,7
+Urbano,Outra condicao,Habitacao em comodo ou cortico,793
+Rural,Outra condicao,Habitacao em comodo ou cortico,184
+Rural,Outra condicao,Oca / maloca (indigena),190
