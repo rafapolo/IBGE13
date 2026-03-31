@@ -588,7 +588,7 @@ Baseado nos estudos: "Raça, Gênero e Classe" (Fundação Heinrich Böll) e "Ra
 | 13 | Renda responsável 2022 | Não disponível |
 | 14-15 | Escolaridade/idade responsável | Sem variável |
 | 20 | Census vs PNAD | Metodologia diferente |
-| 21-28 | Entorno/infraestrutura | Sem dicionário V001-V1056 |
+| 21-28 | Entorno/infraestrutura | ✅ Dicionário disponível |
 | 29-38 | Aglomerados subnormais 2022 | Census não identifica |
 | A1-A5 | Concentração fundiária | Requer Census Agropecuário |
 
@@ -627,23 +627,41 @@ Baseado nos estudos: "Raça, Gênero e Classe" (Fundação Heinrich Böll) e "Ra
 
 ## Conclusão
 
-O banco de dados permite responder **~70% das perguntas** diretamente, com destaque para:
+O banco de dados permite responder **~75% das perguntas** diretamente, com destaque para:
 
 - **Perfil racial**: 45,5% branca, 53,2% negra
 - **Desigualdade educacional**: Pretos 2,9% vs Brancos 1,0% não alfabetizados
 - **Desigualdade ambiental**: Pardos 2,3x mais sem saneamento
 - **Envelhecimento diferencial**: Índice 131 indígenas vs 57 pardos
 - **Segregação urbana**: 68% negra em Fortaleza
+- **Infraestrutura urbana**: 77% com esgoto a céu aberto, 33% sem pavimentação
 
-As principais lacunas estão em:
-- **Variáveis de responsável** (cor_raca, sexo, condição)
-- **Census Agropecuário** (concentração fundiária)
-- **Entorno/infraestrutura** (sem dicionário 2022)
+### Novas descobertas (Março 2026)
+
+| Indicador | Valor |
+|-----------|-------|
+| Domicílios urbanos (2010) | 57,2 milhões |
+| Com iluminação pública | 78,4% |
+| Com esgoto a céu aberto | 77,4% |
+| Sem pavimentação | 33,5% |
+| Responsáveis homens/mulheres | 72%/28% |
+
+### Piores UFs em pavimentação
+| UF | % Sem Pavimentação |
+|----|---------------------|
+| RO | 42,1% |
+| PA | 34,5% |
+| AP | 33,8% |
+| MT | 30,9% |
+
+### Dicionário criado
+- `dicionarios/setor_censitario_entorno_2010.md` - Dicionário completo das 1056 variáveis
+- 10 características do entorno documentadas
 
 ---
 
 **Recomendação**: Para uma análise completa, seria necessário:
 1. Adicionar **microdados 2022** ao banco
-2. Adicionar **dicionário de entorno 2010**
-3. Integrar **shapefiles de aglomerados subnormais** (IBGE/MUIC)
-4. Integrar **dados de áreas de risco** (ANA, CEMAVE, etc.)
+2. Integrar **shapefiles de aglomerados subnormais** (IBGE/MUIC)
+3. Integrar **dados de áreas de risco** (ANA, CEMAVE, etc.)
+4. Adicionar **Census Agropecuário** (concentração fundiária)

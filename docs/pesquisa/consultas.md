@@ -359,7 +359,7 @@ GROUP BY cor_raca;
 | 8-12 | Responsáveis por cor/raça/gênero | Sem tabela cruzada |
 | 14-15 | Escolaridade/idade responsável | Sem variável |
 | 20 | Census vs PNAD | Metodologia diferente |
-| 21-28 | Entorno/infraestrutura | Sem dicionário V001-V1056 |
+| 21-28 | Entorno/infraestrutura | ✅ Dicionário disponível |
 | 29-38 | Aglomerados subnormais | Census 2022 não identifica |
 
 ---
@@ -384,7 +384,7 @@ GROUP BY cor_raca;
 ## Recomendações
 
 1. **Para cor_raca do responsável**: Necessário acessar microdados brutos do Census 2022
-2. **Para entorno/infraestrutura**: Requer dicionário das variáveis V00001-V00177 (Census 2022)
+2. **Para entorno/infraestrutura**: ✅ Dicionário disponível em `dicionarios/setor_censitario_entorno_2010.md`
 3. **Para aglomerados subnormais**: Necessário shapefile do IBGE/MUIC para cruzar com setores
 4. **Para evolução histórica completa**: Processar microdados 1970-2000
 
@@ -392,10 +392,25 @@ GROUP BY cor_raca;
 
 ## Conclusão
 
-O banco de dados permite responder **28 de 38 perguntas** diretamente, com destaque para:
+O banco de dados permite responder **~70% das 38 perguntas** diretamente, com destaque para:
 - **Perfil racial da população** (45,5% branca, 53,2% negra)
 - **Desigualdade educacional** (pretos 2,9% não alfabetizados vs brancos 1,0%)
 - **Desigualdade ambiental** (pardos 2,3x mais sem saneamento)
 - **Envelhecimento diferencial** (índice 131 para indígenas vs 57 para pardos)
+
+### Novas descobertas (Março 2026)
+
+| Indicador | Valor |
+|-----------|-------|
+| Domicílios urbanos (2010) | 57,2 milhões |
+| Com iluminação pública | 78,4% |
+| Com esgoto a céu aberto | 77,4% |
+| Sem pavimentação | 33,5% |
+| Responsáveis homens/mulheres | 72%/28% |
+
+### Arquivos atualizados
+- `respostas.md` - Respostas completas com queries SQL
+- `dicionarios/setor_censitario_entorno_2010.md` - Dicionário das 1056 variáveis
+- `dicionarios/setor_censitario_entorno_2010.json` - Dicionário JSON
 
 As principais lacunas estão nas variáveis de **responsável por domicílio** e **aglomerados subnormais** no Census 2022.

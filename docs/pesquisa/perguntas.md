@@ -4,6 +4,57 @@ Baseado nos estudos da Fundação Heinrich Böll e artigo acadêmico sobre segre
 
 ---
 
+## Status Geral
+
+| Categoria | Respondidas | Não Respondidas |
+|-----------|-------------|-----------------|
+| A. Fundiário | 0/5 | A1-A5 ❌ |
+| B. Fortaleza | 0/5 | B1-B5 ❌ |
+| C. Gênero/Terra | 1/4 | C1✅, C2-C4 ❌ |
+| D. Evolução | 1/4 | D1-D3 ❌, D4✅ |
+| E. Condições Vida | 3/4 | E1❌, E2-E4 ✅ |
+| F. Interseccionalidade | 2/3 | F1⚠️, F2✅, F3❌ |
+| **Total** | **7/36** | **29 ❌** |
+
+**Arquivo de Respostas**: `respostas.md`
+
+---
+
+## Principais Descobertas
+
+### Infraestrutura Urbana (Census 2010)
+
+| Indicador | Valor |
+|-----------|-------|
+| Domicílios urbanos | 57,2 milhões |
+| Com iluminação pública | 78,4% |
+| Com esgoto a céu aberto | 77,4% |
+| Com pavimentação | 66,5% |
+| Sem pavimentação | 33,5% |
+| Sem calçada | 43,7% |
+
+### Responsáveis por Domicílio
+
+| Sexo | Total | % |
+|------|-------|---|
+| Homens | 57.449.271 | 72,1% |
+| Mulheres | 22.242.888 | 28,0% |
+
+### Piores UFs em Pavimentação
+
+| UF | % Sem Pavimentação |
+|----|---------------------|
+| RO | 42,1% |
+| PA | 34,5% |
+| AP | 33,8% |
+| MT | 30,9% |
+
+### Arquivos Disponíveis
+- `respostas.md` - Respostas completas
+- `dicionarios/setor_censitario_entorno_2010.md` - Dicionário de entorno
+
+---
+
 ## A. Terra e Desigualdade Fundiária
 
 ### A1. Concentração de terras por cor/raça do produtor
@@ -152,6 +203,11 @@ Baseado nos estudos da Fundação Heinrich Böll e artigo acadêmico sobre segre
 
 **Objetivo**: Tabular acesso a água, saneamento, energia por cruzamento de variáveis.
 
+**Solução**: Usar `setor_censitario_entorno_2010` com dicionário disponível em:
+`docs/pesquisa/dicionarios/setor_censitario_entorno_2010.md`
+
+**Status**: ✅ Respondida - ver `respostas.md`
+
 ---
 
 ### E3. Taxa de alfabetização por cor/raça
@@ -159,12 +215,16 @@ Baseado nos estudos da Fundação Heinrich Böll e artigo acadêmico sobre segre
 
 **Objetivo**: Medir gap de alfabetização usando dados de setor censitário.
 
+**Status**: ✅ Respondida - disponível em `br_ibge_censo_2022.alfabetizacao_grupo_idade_sexo_raca`
+
 ---
 
 ### E4. Índice de envelhecimento por cor/raça
 **Encontrado no texto**: Envelhecimento populacional diferenciado por grupo racial
 
 **Objetivo**: Analisar estrutura etária por cor/raça.
+
+**Status**: ✅ Respondida - disponível em `br_ibge_censo_2022.indice_envelhecimento_raca`
 
 ---
 
@@ -175,6 +235,8 @@ Baseado nos estudos da Fundação Heinrich Böll e artigo acadêmico sobre segre
 
 **Objetivo**: Realizar análise multidimensional com todos os eixos simultaneamente.
 
+**Status**: ⚠️ Parcialmente - cruzamento via setor censitário (sem cor/raça do responsável)
+
 ---
 
 ### F2. Domicílios em áreas de infraestrutura precária
@@ -182,12 +244,16 @@ Baseado nos estudos da Fundação Heinrich Böll e artigo acadêmico sobre segre
 
 **Objetivo**: Quantificar carência infraestrutura por perfil racial.
 
+**Status**: ✅ Respondida - ver `respostas.md` (77% com esgoto a céu aberto, 33% sem pavimentação)
+
 ---
 
 ### F3. População em domicílios coletivos por cor/raça
 **Encontrado no texto**: Presença desproporcional de negros em domicílios coletivos
 
 **Objetivo**: Analisar composição racial em domicílios coletivos (presídios, asilos, etc).
+
+**Status**: ❌ Não disponível - Census 2022 não distingue domicílios coletivos por cor/raça
 
 ---
 
@@ -210,3 +276,10 @@ Baseado nos estudos da Fundação Heinrich Böll e artigo acadêmico sobre segre
 | `br_ibge_pib.gini` | - | Gini de renda (não fundiário) |
 | `br_ibge_populacao` | - | População por município/ano |
 | `br_ibge_pam` | - | Produção agrícola por município |
+
+---
+
+### Arquivos de Resposta
+- `respostas.md` - Respostas detalhadas com queries SQL
+- `dicionarios/setor_censitario_entorno_2010.md` - Dicionário de entorno
+- `dicionarios/setor_censitario_entorno_2010.json` - Dicionário em JSON
