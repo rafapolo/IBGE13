@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moradia nos Censos Brasileiros 1872–2022</title>
   <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -21,7 +24,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Georgia', serif;
+      font-family: 'Monda', 'Georgia', sans-serif;
       background: var(--cream);
       color: var(--text);
       line-height: 1.75;
@@ -41,7 +44,7 @@
       color: #c9d1d9;
       text-decoration: none;
       padding: 0.7rem 1.4rem;
-      font-family: monospace;
+      font-family: 'Monda', monospace;
       font-size: 0.85rem;
       letter-spacing: 0.05em;
       transition: background 0.15s;
@@ -79,7 +82,7 @@
       border-radius: 2rem;
       padding: 0.25rem 0.9rem;
       font-size: 0.78rem;
-      font-family: monospace;
+      font-family: 'Monda', monospace;
       color: var(--accent);
     }
 
@@ -146,7 +149,7 @@
     .census-card-header .year {
       font-size: 1.5rem;
       font-weight: 700;
-      font-family: monospace;
+      font-family: 'Monda', monospace;
       color: var(--accent);
       white-space: nowrap;
     }
@@ -207,7 +210,7 @@
       padding: 0.8rem 1rem;
     }
     .stat-box .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
-    .stat-box .value { font-size: 1.15rem; font-weight: 700; font-family: monospace; color: var(--dark); }
+    .stat-box .value { font-size: 1.15rem; font-weight: 700; font-family: 'Monda', monospace; color: var(--dark); }
 
     /* ── DIVIDER ── */
     .divider {
@@ -241,7 +244,7 @@
     .chart-header .year {
       font-size: 1.6rem;
       font-weight: 700;
-      font-family: monospace;
+      font-family: 'Monda', monospace;
       color: var(--accent);
     }
     .chart-header .desc { font-size: 0.88rem; opacity: 0.65; }
