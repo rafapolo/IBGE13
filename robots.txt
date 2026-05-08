@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rafapolo.github.io/IBGE13/sitemap.xml
