@@ -3,157 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moradia nos Censos Brasileiros 1970–2010</title>
+  <title>Moradia nos Censos Brasileiros 1872–2022</title>
   <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    :root {
+      --dark: #1a1a2e;
+      --mid: #2d2d4e;
+      --accent: #7ec8e3;
+      --cream: #faf9f7;
+      --line: #e0dcd4;
+      --text: #222;
+      --muted: #666;
+    }
+
+    html { scroll-behavior: smooth; }
+
     body {
       font-family: 'Georgia', serif;
-      background: #faf9f7;
-      color: #1a1a1a;
-      line-height: 1.7;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.75;
     }
 
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--dark);
+      display: flex;
+      gap: 0;
+      border-bottom: 2px solid var(--accent);
+    }
+    nav a {
+      color: #c9d1d9;
+      text-decoration: none;
+      padding: 0.7rem 1.4rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      transition: background 0.15s;
+    }
+    nav a:hover { background: var(--mid); color: #fff; }
+
+    /* ── HEADER ── */
     header {
-      background: #1a1a2e;
+      background: var(--dark);
       color: #e8e4d9;
-      padding: 3rem 2rem 2.5rem;
+      padding: 3.5rem 2rem 3rem;
       text-align: center;
     }
-
     header h1 {
-      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
       font-weight: 400;
       letter-spacing: 0.02em;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.7rem;
     }
-
-    header p {
+    header .sub {
       font-size: 1rem;
-      opacity: 0.75;
-      max-width: 640px;
-      margin: 0 auto 1.2rem;
+      opacity: 0.7;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
     }
-
     .badge-row {
       display: flex;
-      gap: 1rem;
+      gap: 0.6rem;
       justify-content: center;
       flex-wrap: wrap;
-      margin-top: 1.2rem;
     }
-
     .badge {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
       border-radius: 2rem;
-      padding: 0.3rem 1rem;
-      font-size: 0.8rem;
+      padding: 0.25rem 0.9rem;
+      font-size: 0.78rem;
       font-family: monospace;
-      color: #c9d1d9;
+      color: var(--accent);
     }
 
-    .intro {
-      max-width: 800px;
-      margin: 3rem auto 0;
-      padding: 0 2rem;
+    /* ── SECTIONS ── */
+    .section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
     }
-
-    .intro h2 {
-      font-size: 1.1rem;
-      font-weight: 600;
+    .section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #666;
-      margin-bottom: 1rem;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin-bottom: 1.4rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
     }
 
-    .intro p {
-      font-size: 1rem;
-      color: #444;
-      margin-bottom: 0.8rem;
-    }
-
-    .data-table {
+    /* ── TABLES ── */
+    .tbl-wrap { overflow-x: auto; margin: 1.5rem 0 2rem; }
+    table {
       width: 100%;
       border-collapse: collapse;
-      margin: 1.5rem 0;
-      font-size: 0.88rem;
+      font-size: 0.87rem;
     }
-
-    .data-table th {
-      background: #1a1a2e;
+    thead th {
+      background: var(--dark);
       color: #e8e4d9;
       padding: 0.6rem 1rem;
       text-align: left;
       font-weight: 500;
+      white-space: nowrap;
     }
-
-    .data-table td {
+    tbody td {
       padding: 0.55rem 1rem;
-      border-bottom: 1px solid #e8e4d9;
+      border-bottom: 1px solid var(--line);
       color: #333;
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even) td { background: #f3f1ec; }
+    tbody tr:hover td { background: #e8e4d9; }
+
+    /* ── CENSUS CARDS ── */
+    .census-grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .census-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .census-card-header {
+      background: var(--dark);
+      color: #e8e4d9;
+      padding: 0.85rem 1.4rem;
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .census-card-header .year {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: monospace;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .census-card-header .tag {
+      font-size: 0.8rem;
+      opacity: 0.65;
+    }
+    .census-card-body {
+      padding: 1.2rem 1.4rem;
+      font-size: 0.95rem;
+    }
+    .census-card-body p { margin-bottom: 0.7rem; color: #333; }
+    .census-card-body p:last-child { margin-bottom: 0; }
+    .census-card-body ul {
+      margin: 0.5rem 0 0.8rem 1.2rem;
+      color: #444;
+    }
+    .census-card-body li { margin-bottom: 0.25rem; }
+    .census-card-body strong { color: var(--dark); }
+
+    .highlight {
+      background: #eef7fb;
+      border-left: 3px solid var(--accent);
+      padding: 0.6rem 1rem;
+      margin: 0.8rem 0;
+      font-size: 0.93rem;
+      color: #334;
+      border-radius: 0 4px 4px 0;
+    }
+    .warn {
+      background: #fff8e6;
+      border-left: 3px solid #e8a020;
+      padding: 0.6rem 1rem;
+      margin: 0.8rem 0;
+      font-size: 0.93rem;
+      color: #443322;
+      border-radius: 0 4px 4px 0;
+    }
+    .not-done {
+      background: #fdf0f0;
+      border-left: 3px solid #d04040;
+      padding: 0.6rem 1rem;
+      margin: 0.8rem 0;
+      font-size: 0.93rem;
+      color: #3a1010;
+      border-radius: 0 4px 4px 0;
     }
 
-    .data-table tr:nth-child(even) td { background: #f3f1ec; }
-    .data-table tr:hover td { background: #e8e4d9; }
+    .stat-cols {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .stat-box {
+      background: #f3f1ec;
+      border-radius: 6px;
+      padding: 0.8rem 1rem;
+    }
+    .stat-box .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+    .stat-box .value { font-size: 1.15rem; font-weight: 700; font-family: monospace; color: var(--dark); }
 
+    /* ── DIVIDER ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 0;
+    }
+
+    /* ── CHARTS ── */
+    #fluxos .section-title { max-width: 1280px; margin: 0 auto; padding: 3rem 2rem 0; }
     .charts {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1.5rem 2rem 3rem;
     }
-
     .chart-block {
       background: #fff;
-      border: 1px solid #e0dcd4;
+      border: 1px solid var(--line);
       border-radius: 8px;
       margin-bottom: 2.5rem;
       overflow: hidden;
     }
-
     .chart-header {
-      background: #1a1a2e;
+      background: var(--dark);
       color: #e8e4d9;
       padding: 1rem 1.5rem;
       display: flex;
       align-items: baseline;
       gap: 1rem;
     }
-
     .chart-header .year {
       font-size: 1.6rem;
       font-weight: 700;
       font-family: monospace;
-      color: #7ec8e3;
+      color: var(--accent);
     }
+    .chart-header .desc { font-size: 0.88rem; opacity: 0.65; }
+    .chart-body { padding: 1.5rem; overflow-x: auto; }
+    .mermaid { display: flex; justify-content: center; }
 
-    .chart-header .desc {
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
+    /* ── REFS ── */
+    .refs { font-size: 0.88rem; color: #555; }
+    .refs li { margin-bottom: 0.5rem; }
 
-    .chart-body {
-      padding: 1.5rem;
-      overflow-x: auto;
-    }
-
-    .mermaid {
-      display: flex;
-      justify-content: center;
-    }
-
+    /* ── FOOTER ── */
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.82rem;
-      color: #999;
-      border-top: 1px solid #e0dcd4;
-      margin-top: 2rem;
+      color: #aaa;
+      border-top: 1px solid var(--line);
     }
-
-    footer a { color: #1a1a2e; text-decoration: none; }
+    footer a { color: var(--dark); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -161,57 +268,274 @@
 
 <header>
   <h1>Dados de Moradia nos Censos Brasileiros</h1>
-  <p>Um retrato público da habitação no Brasil ao longo das últimas décadas, construído a partir dos microdados do IBGE.</p>
+  <p class="sub">Um retrato público dos dados de habitação no Brasil ao longo dos últimos 150 anos, construído a partir dos microdados do IBGE.</p>
   <div class="badge-row">
-    <span class="badge">1970</span>
-    <span class="badge">1980</span>
-    <span class="badge">1991</span>
-    <span class="badge">2000</span>
-    <span class="badge">2010</span>
+    <span class="badge">1872</span><span class="badge">1920</span><span class="badge">1940</span>
+    <span class="badge">1970</span><span class="badge">1980</span><span class="badge">1991</span>
+    <span class="badge">2000</span><span class="badge">2010</span><span class="badge">2022</span>
   </div>
 </header>
 
-<section class="intro">
-  <h2>Contexto</h2>
-  <p>
-    Os censos demográficos do IBGE são a principal fonte de dados sobre condições de moradia no Brasil.
-    A partir de <strong>1970</strong>, o questionário passou a coletar sistematicamente informações sobre
-    a <strong>condição de ocupação</strong> dos domicílios (próprio, alugado, cedido) e o
-    <strong>tipo de habitação</strong> (casa, apartamento, cômodo etc.).
-  </p>
-  <p>
-    Os diagramas abaixo mostram fluxos Sankey entre <em>localização</em> → <em>condição de ocupação</em> → <em>tipo de domicílio</em>,
-    permitindo visualizar como esses padrões se transformaram ao longo de quatro décadas.
-  </p>
+<nav>
+  <a href="#sintese">Síntese</a>
+  <a href="#historia">História</a>
+  <a href="#fluxos">DataViz</a>
+  <a href="#referencias">Referências</a>
+</nav>
 
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Ano</th>
-        <th>População</th>
-        <th>Contexto</th>
-        <th>Destaque habitacional</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>1970</td><td>93,1 mi</td><td>Ditadura Militar (AI-5)</td><td>Maioria urbana pela 1ª vez; início da coleta sobre domicílios</td></tr>
-      <tr><td>1980</td><td>119,0 mi</td><td>Ditadura (últimos anos)</td><td>Expansão das metrópoles; refinamento na "condição cedido"</td></tr>
-      <tr><td>1991</td><td>146,8 mi</td><td>Redemocratização</td><td>Reintrodução da categoria indígena</td></tr>
-      <tr><td>2000</td><td>169,8 mi</td><td>Virada do milênio</td><td>Distinção "próprio já pago" × "próprio pagando"</td></tr>
-      <tr><td>2010</td><td>190,7 mi</td><td>Crescimento acelerado</td><td>Condição de ocupação no questionário básico pela 1ª vez</td></tr>
-    </tbody>
-  </table>
+<!-- ══════════════════ SÍNTESE ══════════════════ -->
+<section id="sintese" class="section">
+  <p class="section-title">Síntese dos Censos (1872–2022)</p>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ano</th><th>Pop. (mi)</th><th>Contexto político-social</th>
+          <th>Destaques do censo</th><th>Curiosidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1872</td><td>10,3</td><td>Império (D. Pedro II)</td><td>1º censo oficial; coleta de cor, religião, condição civil</td><td>Registrou ~1,5 mi de escravizados (15% da pop.)</td></tr>
+        <tr><td>1890</td><td>14,3</td><td>Primeira República</td><td>Falhas de execução; omissões de filiação e nacionalidade</td><td>Subestimação populacional em várias províncias</td></tr>
+        <tr><td>1900</td><td>17,4</td><td>Primeira República</td><td>Problemas de metodologia e divulgação</td><td>Tentativa frustrada de padronizar dados</td></tr>
+        <tr><td>1920</td><td>30,6</td><td>República Velha (pós-1ª Guerra)</td><td>1º com dados de habitação; suprimiu cor e religião</td><td>Mostrou crescimento urbano inicial</td></tr>
+        <tr><td>1940</td><td>41,2</td><td>Estado Novo (Vargas)</td><td>1º sob IBGE; estatística como planejamento estatal</td><td>"Quantos somos? O Censo Nacional vai contar para você"</td></tr>
+        <tr><td>1950</td><td>51,9</td><td>Pós-2ª Guerra Mundial</td><td>Ênfase na industrialização; migração campo–cidade</td><td>Sudeste supera Nordeste em população</td></tr>
+        <tr><td>1960</td><td>70,1</td><td>JK e desenvolvimentismo</td><td>Inclusão de variáveis de saneamento e infraestrutura</td><td>Identificação das primeiras grandes favelas</td></tr>
+        <tr><td>1970</td><td>93,1</td><td>Ditadura Militar (AI-5 em vigor)</td><td>Maioria urbana (&gt;50%); início da coleta sobre domicílios</td><td>1/3 das casas urbanas sem banheiro</td></tr>
+        <tr><td>1980</td><td>119,0</td><td>Ditadura (últimos anos)</td><td>Expansão das metrópoles; refinamento na "condição cedido"</td><td>60% das casas tinham energia elétrica</td></tr>
+        <tr><td>1991</td><td>146,8</td><td>Redemocratização</td><td>Reintrodução da categoria indígena</td><td>Mais de 70% dos lares tinham TV</td></tr>
+        <tr><td>2000</td><td>169,8</td><td>Virada do milênio</td><td>Detalhamento "próprio já pago" × "próprio pagando"</td><td>Metade da pop. vivia em cidades &gt;100 mil hab.</td></tr>
+        <tr><td>2010</td><td>190,7</td><td>Crescimento acelerado</td><td>Condição de ocupação incluída no questionário básico</td><td>Celular já mais comum que telefone fixo</td></tr>
+        <tr><td>2022</td><td>203,1</td><td>Crise política e pandemia</td><td>Novo detalhamento dos tipos de domicílio; condição só na amostra</td><td>Crescimento desacelerado; 84% urbanos</td></tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
-<section class="charts">
+<hr class="divider">
 
-  <div class="chart-block">
-    <div class="chart-header">
-      <span class="year">1970</span>
-      <span class="desc">Situação do domicílio → Condição de ocupação → Tipo de construção</span>
+<!-- ══════════════════ HISTÓRIA ══════════════════ -->
+<section id="historia" class="section">
+  <p class="section-title">História dos Censos no Brasil</p>
+
+  <div class="census-grid">
+
+    <!-- 1872 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1872</span>
+        <span class="tag">Primeiro Recenseamento Nacional — Império de D. Pedro II</span>
+      </div>
+      <div class="census-card-body">
+        <p>Em 1870, foi aprovada a <strong>primeira lei</strong> que determinava recenseamentos nacionais a cada dez anos. O <strong>Recenseamento Geral do Império (1872)</strong> é considerado o primeiro levantamento censitário oficial do Brasil, regulamentado pelo Decreto nº 4.856/1871.</p>
+        <p>O foco foi <strong>populacional</strong> — sexo, idade, cor, estado civil, religião, instrução, profissão. <strong>Não foram coletados dados sobre moradia ou habitação</strong> nesse primeiro recenseamento.</p>
+        <p>Esse censo refletia o anseio da elite letrada imperial por uma descrição da nação: homogênea culturalmente, mas hierarquizada socialmente e pela cor <em>(AZEVEDO, 1990, p. 91)</em>.</p>
+
+        <div class="stat-cols">
+          <div class="stat-box"><div class="label">População total</div><div class="value">10.317.733</div></div>
+          <div class="stat-box"><div class="label">Escravizados</div><div class="value">1.510.806 (≈ 15,2%)</div></div>
+          <div class="stat-box"><div class="label">Livres</div><div class="value">8.419.672 (≈ 84,8%)</div></div>
+        </div>
+
+        <p><strong>Distribuição por cor:</strong></p>
+        <ul>
+          <li>🤍 Brancos: 3.787.289 (38,1%)</li>
+          <li>🤎 Pardos: 4.188.737 (42,2%)</li>
+          <li>🖤 Pretos: 1.954.452 (19,7%)</li>
+          <li>🪶 Caboclos: 386.955 (3,9%)</li>
+        </ul>
+        <p>Pardos + pretos + caboclos somavam <strong>mais de 60%</strong> da população já em 1872.</p>
+
+        <p><strong>Religião:</strong> quase 100% registrada como católica. Exceções: ~9 mil protestantes, ~349 judeus, demais religiões diluídas em categorias residuais.</p>
+
+        <div class="warn">⚠️ O Censo de 1872 é um marco para medir a dimensão final da escravidão no Brasil. Em províncias como Rio de Janeiro, Bahia e Maranhão, escravizados ultrapassavam 20% da população local — a maior população escravizada das Américas, a apenas 16 anos da Abolição.</div>
+
+        <div class="warn">⚠️ O termo "amarelo" (origem asiática) só seria introduzido no século XX. "Indígena" reaparece como categoria apenas em 1991.</div>
+
+        <p style="margin-top:0.8rem"><strong>Revisão do IBGE (2000, "Brasil: 500 anos de povoamento"):</strong> população revisada acrescida de +387.255 pessoas (~3,9%) — principalmente indígenas não recenseados (+300–400 mil) e escravizados subdeclarados (+80–100 mil).</p>
+      </div>
     </div>
-    <div class="chart-body">
-      <pre class="mermaid">
+
+    <!-- 1880 / 1890 / 1900 / 1910 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1880 · 1890 · 1900 · 1910</span>
+        <span class="tag">Censos não realizados e problemáticos</span>
+      </div>
+      <div class="census-card-body">
+        <div class="not-done">🚫 <strong>1880</strong> — Não realizado por instabilidade política</div>
+        <div class="not-done">🚫 <strong>1910</strong> — Não realizado</div>
+        <div class="not-done">🚫 <strong>1930</strong> — Não realizado (Revolução de 1930)</div>
+        <p style="margin-top:0.8rem"><strong>1890 e 1900</strong> foram realizados, mas tiveram graves falhas de execução e divulgação — deixaram de coletar dados importantes como filiação e nacionalidade dos pais. A retomada qualitativa só ocorreu em <strong>1920</strong> <em>(AZEVEDO, 1990)</em>.</p>
+      </div>
+    </div>
+
+    <!-- 1920 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1920</span>
+        <span class="tag">Primeiro censo com dados de habitação — República Velha</span>
+      </div>
+      <div class="census-card-body">
+        <p>O censo de 1920 é considerado o <strong>primeiro a coletar dados de moradia</strong>: tipo de habitação, número de cômodos e material de construção <em>(IBGE, 2003)</em>. Retratava a população com riqueza de detalhes, refletindo o anseio intelectual de "conhecer o Brasil" <em>(MOTTA, 1992, p. 18)</em>.</p>
+
+        <div class="warn">⚠️ A categoria <strong>cor</strong>, presente em 1872, foi <strong>retirada em 1920</strong>. O discurso republicano buscava construir a imagem de um Brasil moderno e homogêneo — sem distinções raciais oficiais. A religião também foi eliminada.</div>
+
+        <p>O censo enfatizou a <strong>divisão social do trabalho</strong>, com categorias ocupacionais detalhadas: produção, indústria, comércio, administração, profissões liberais, serviços domésticos.</p>
+      </div>
+    </div>
+
+    <!-- 1940 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1940</span>
+        <span class="tag">Início da Era IBGE — Estado Novo de Vargas</span>
+      </div>
+      <div class="census-card-body">
+        <p>Foi o <strong>VI censo nacional</strong> e o <strong>primeiro realizado sob o IBGE</strong>, criado em 1936 como parte do esforço de centralização e modernização do Estado pós-Revolução de 1930.</p>
+        <ul>
+          <li><strong>Coordenador:</strong> Giorgio Mortara (1885–1967), demógrafo judeu italiano exilado do fascismo</li>
+          <li><strong>Slogan:</strong> "Quantos somos? O Censo Nacional vai contar para você"</li>
+          <li>Planejamento minucioso devido ao longo intervalo desde 1920</li>
+        </ul>
+        <div class="highlight">✅ O IBGE marcou uma nova fase nas estatísticas populacionais brasileiras, transformando o censo num instrumento de planejamento estatal.</div>
+      </div>
+    </div>
+
+    <!-- 1950 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1950</span>
+        <span class="tag">Pós-2ª Guerra — Início da migração campo–cidade</span>
+      </div>
+      <div class="census-card-body">
+        <p>Primeiro censo após a Segunda Guerra Mundial. População: <strong>51,9 milhões</strong>. Evidenciou o início da <strong>migração campo–cidade</strong> em maior escala. O IBGE passou a usar métodos mais modernos de tabulação e processamento.</p>
+        <div class="highlight">🔹 Foi o censo que mostrou a ascensão do <strong>Sudeste como principal região populacional</strong> — ultrapassando o Nordeste em população absoluta.</div>
+      </div>
+    </div>
+
+    <!-- 1960 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1960</span>
+        <span class="tag">Industrialização acelerada — Governo JK</span>
+      </div>
+      <div class="census-card-body">
+        <p>População: <strong>70,1 milhões</strong>. Marcou o período de industrialização acelerada ("50 anos em 5"). Inclusão de variáveis sobre <strong>condição de saneamento</strong> e infraestrutura urbana.</p>
+        <div class="highlight">🔹 Esse censo já captava a formação de grandes <strong>cinturões de favelas</strong> em torno de São Paulo e Rio de Janeiro — reflexo da urbanização desordenada.</div>
+      </div>
+    </div>
+
+    <!-- 1970 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1970</span>
+        <span class="tag">Ditadura Militar — AI-5 em vigor</span>
+      </div>
+      <div class="census-card-body">
+        <p>População: <strong>93,1 milhões</strong>. Pela primeira vez, o Brasil registrou <strong>maioria da população vivendo em áreas urbanas</strong> (~55%). Introduziu a classificação sistemática dos domicílios por <strong>condição de ocupação</strong> (próprio, alugado, cedido, outra condição).</p>
+        <div class="highlight">🔹 Apesar do "milagre econômico", o censo revelou grandes desigualdades: mais de <strong>1/3 das casas urbanas não tinham banheiro</strong>, e a cobertura de água tratada era limitada nas periferias.</div>
+        <div class="highlight">🔹 Surgem os primeiros levantamentos oficiais de favelas, mas com subestimação — muitas áreas urbanas pobres eram classificadas como "aglomerados irregulares".</div>
+      </div>
+    </div>
+
+    <!-- 1980 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1980</span>
+        <span class="tag">Crescimento das metrópoles — Últimos anos da ditadura</span>
+      </div>
+      <div class="census-card-body">
+        <p>Marco do crescimento das <strong>regiões metropolitanas</strong> (São Paulo, Rio, Belo Horizonte). Pela primeira vez, mais de <strong>120 milhões de habitantes</strong> foram recenseados. Inclusão de novas classificações: "cedido por empregador" versus "cedido de outra forma".</p>
+        <div class="highlight">🔹 O IBGE registrou que <strong>mais de 60% das casas tinham energia elétrica</strong> — um salto comparado a 1970, mas ainda desigual em zonas rurais.</div>
+      </div>
+    </div>
+
+    <!-- 1991 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">1991</span>
+        <span class="tag">Redemocratização — Constituição de 1988</span>
+      </div>
+      <div class="census-card-body">
+        <p>Primeiro censo realizado após a redemocratização. População: <strong>146,8 milhões</strong>. Reintroduziu a categoria <strong>"indígena"</strong> como cor/raça — ausente desde 1872.</p>
+        <div class="highlight">🔹 Esse censo revelou a <strong>explosão da televisão</strong> no Brasil: mais de 70% dos domicílios tinham aparelho de TV, mostrando o impacto da comunicação de massa.</div>
+      </div>
+    </div>
+
+    <!-- 2000 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">2000</span>
+        <span class="tag">Virada do milênio</span>
+      </div>
+      <div class="census-card-body">
+        <p>População: <strong>169,8 milhões</strong>. Pela primeira vez, introduziu a distinção no quesito <strong>"próprio"</strong>:</p>
+        <ul>
+          <li>"Próprio, já pago"</li>
+          <li>"Próprio, ainda pagando"</li>
+        </ul>
+        <p>Marcou o início do uso da <strong>internet</strong> como tema indireto, medindo computadores e linhas telefônicas.</p>
+        <div class="highlight">🔹 O censo registrou que <strong>metade da população já vivia em cidades acima de 100 mil habitantes</strong>.</div>
+      </div>
+    </div>
+
+    <!-- 2010 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">2010</span>
+        <span class="tag">Crescimento acelerado</span>
+      </div>
+      <div class="census-card-body">
+        <p>População: <strong>190,7 milhões</strong>. Inclusão detalhada da <strong>condição de ocupação do domicílio</strong> no Questionário Básico. Coleta ampliada sobre saneamento, acesso à água, energia elétrica e coleta de lixo.</p>
+        <div class="highlight">🔹 O censo mostrou que o <strong>celular já era mais comum que o telefone fixo</strong> nos lares brasileiros — marco da mudança tecnológica.</div>
+      </div>
+    </div>
+
+    <!-- 2022 -->
+    <div class="census-card">
+      <div class="census-card-header">
+        <span class="year">2022</span>
+        <span class="tag">Crise política e pandemia — Censo atrasado</span>
+      </div>
+      <div class="census-card-body">
+        <p>População: <strong>203,1 milhões</strong>. Dividiu os domicílios particulares permanentes em <strong>seis tipos</strong>, incluindo:</p>
+        <ul>
+          <li>"Habitação em casa de cômodos ou cortiço"</li>
+          <li>"Habitação indígena sem paredes"</li>
+          <li>"Estrutura residencial degradada ou inacabada"</li>
+        </ul>
+        <p>Pela primeira vez, a <strong>condição de ocupação do domicílio</strong> foi coletada apenas na amostra, não no questionário universal.</p>
+        <div class="highlight">🔹 O Brasil registrou uma <strong>redução inédita no ritmo de crescimento populacional</strong> — transição demográfica mais rápida que o previsto. Mais de <strong>84% dos brasileiros vivem em áreas urbanas</strong>, confirmando a urbanização quase completa do país.</div>
+      </div>
+    </div>
+
+  </div><!-- /census-grid -->
+</section>
+
+<hr class="divider">
+
+<!-- ══════════════════ DATAVIZ ══════════════════ -->
+<div id="fluxos">
+  <div style="max-width:1280px;margin:0 auto;padding:3rem 2rem 0">
+    <p class="section-title">DataViz — Fluxos de Moradia 1970–2010</p>
+    <p style="font-size:0.95rem;color:#444;margin-bottom:0.5rem">
+      Diagramas Sankey: <em>localização</em> → <em>condição de ocupação</em> → <em>tipo de domicílio</em>.
+      Dados extraídos dos microdados dos Censos Demográficos do IBGE.
+    </p>
+  </div>
+
+  <div class="charts">
+
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="year">1970</span>
+        <span class="desc">Situação → Condição de ocupação → Tipo de construção</span>
+      </div>
+      <div class="chart-body">
+        <pre class="mermaid">
 ---
 config:
   sankey:
@@ -253,17 +577,17 @@ sankey-beta
   Cond Outra condicao,Tipo Rustico,1659069
   Cond Outra condicao,Tipo Duravel,1353801
   Cond Nao classificado,Tipo Rustico,16
-      </pre>
+        </pre>
+      </div>
     </div>
-  </div>
 
-  <div class="chart-block">
-    <div class="chart-header">
-      <span class="year">1980</span>
-      <span class="desc">Localização → Condição de ocupação → Tipo de domicílio</span>
-    </div>
-    <div class="chart-body">
-      <pre class="mermaid">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="year">1980</span>
+        <span class="desc">Localização → Condição de ocupação → Tipo de domicílio</span>
+      </div>
+      <div class="chart-body">
+        <pre class="mermaid">
 ---
 config:
   sankey:
@@ -314,17 +638,17 @@ sankey-beta
   Proprio em aquisicao,Casa,258066
   Proprio ja pago,Apartamento,115652
   Proprio ja pago,Casa,3484304
-      </pre>
+        </pre>
+      </div>
     </div>
-  </div>
 
-  <div class="chart-block">
-    <div class="chart-header">
-      <span class="year">1991</span>
-      <span class="desc">Localização → Situação de ocupação → Tipo de domicílio</span>
-    </div>
-    <div class="chart-body">
-      <pre class="mermaid">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="year">1991</span>
+        <span class="desc">Localização → Situação de ocupação → Tipo de domicílio</span>
+      </div>
+      <div class="chart-body">
+        <pre class="mermaid">
 ---
 config:
   sankey:
@@ -432,17 +756,17 @@ sankey-beta
   Sit Proprio ja pago,Tipo Outro tipo,7102
   Sit Proprio ja pago,Tipo Unidade nao residencial,147814
   Sit Proprio ja pago,Tipo Unidade improvisada,2294
-      </pre>
+        </pre>
+      </div>
     </div>
-  </div>
 
-  <div class="chart-block">
-    <div class="chart-header">
-      <span class="year">2000</span>
-      <span class="desc">Situação → Condição de ocupação → Tipo de domicílio</span>
-    </div>
-    <div class="chart-body">
-      <pre class="mermaid">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="year">2000</span>
+        <span class="desc">Situação → Condição de ocupação → Tipo de domicílio</span>
+      </div>
+      <div class="chart-body">
+        <pre class="mermaid">
 ---
 config:
   sankey:
@@ -484,17 +808,17 @@ sankey-beta
   Proprio pago,Apartamento,604698
   Proprio pago,Casa,13508004
   Proprio pago,Comodo,70590
-      </pre>
+        </pre>
+      </div>
     </div>
-  </div>
 
-  <div class="chart-block">
-    <div class="chart-header">
-      <span class="year">2010</span>
-      <span class="desc">Situação → Condição de ocupação → Tipo de domicílio</span>
-    </div>
-    <div class="chart-body">
-      <pre class="mermaid">
+    <div class="chart-block">
+      <div class="chart-header">
+        <span class="year">2010</span>
+        <span class="desc">Situação → Condição de ocupação → Tipo de domicílio</span>
+      </div>
+      <div class="chart-body">
+        <pre class="mermaid">
 ---
 config:
   sankey:
@@ -554,10 +878,26 @@ sankey-beta
   Proprio quitado,Casa de vila ou condominio,34572
   Proprio quitado,Habitacao em comodo ou cortico,7180
   Proprio quitado,Oca maloca indigena,2119
-      </pre>
+        </pre>
+      </div>
     </div>
-  </div>
 
+  </div><!-- /charts -->
+</div><!-- /fluxos -->
+
+<hr class="divider">
+
+<!-- ══════════════════ REFERÊNCIAS ══════════════════ -->
+<section id="referencias" class="section">
+  <p class="section-title">Referências Principais</p>
+  <ul class="refs">
+    <li>AZEVEDO, Fernando de. <strong>A cultura brasileira</strong>. São Paulo: Melhoramentos, 1990.</li>
+    <li>MOTTA, Marly Silva da. <strong>O Brasil em números: censos demográficos e construção nacional</strong>. Rio de Janeiro: IBGE, 1992.</li>
+    <li>BOTELHO, Tarcísio Rodrigues. <strong>Os recenseamentos da população no Brasil: reflexões sobre as classificações</strong>. Belo Horizonte: UFMG, 2009.</li>
+    <li>MOTTA, Ana Lúcia Silva. <strong>O perfil do brasileiro construído pelo IBGE: uma memória discursiva dos censos demográficos de 1940 a 2010</strong>. Tese (Doutorado em Memória Social) – UNIRIO, 2012.</li>
+    <li>IBGE. <strong>Brasil: 500 anos de povoamento</strong>. Rio de Janeiro: IBGE, 2000.</li>
+    <li>IBGE. <strong>Microdados dos Censos Demográficos</strong>. Disponível em: <a href="https://www.ibge.gov.br/estatisticas/sociais/habitacao">ibge.gov.br</a></li>
+  </ul>
 </section>
 
 <footer>
